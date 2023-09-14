@@ -131,9 +131,97 @@
     - Debug
       - Executado modo debug pelo VSCode, Ctrl+Shift+D.
       - Pasta .vscode deve existir nas pastas do seu projeto.
-      - Caso não exista, ao entrar na opção de debug o vscode irá perguntar se deseja criar o "launch.jason" file, neste momento será criada a pasta ".vscode" que habilita para executar o debug da aplicação. Seleciona um projeto ".Net Core".
+      - Caso não exista, ao entrar na opção de debug o vscode irá perguntar se deseja criar o "launch.jason" file, neste momento será criada a pasta ".vscode" que habilita para executar o debug da aplicação. Selecionar um projeto ".Net Core".
 
     - Revisão
 
 ### Linguagem de Programação
+
+  - Notas importantes
+    - Nome de projeto sem utilização de espaços ou caracteres especiais.
+      - Ex: "Meu APP", "Meu App", "Meu_App", "Meu@pp".
+      - Ex: "MeuApp" boa prática.
+    - Evitar também no path de pastas com caracteres especiais ou mesmo muito longos.
+    - C# é case sensitive, observar as declarações maiusculas de letras minúculas.
+      - Teste é diferente de teste.  
+
+  - Escopo de um programa
+    - Importações
+      - Ficam no inicio do arquivo.
+      - Ex: módulo de acesso banco de dados, módulo de escrita em disco.
+      - Definida por "using"
+    - Namespace
+      - Divisão/Separação lógica.
+    - Classe
+      - O programa
+    - Método principal
+        - Método Main
+
+  - Namespaces
+    - O C# não aceita um mesmo namespace, mesmo que dentro de pastas diferentes no mesmo projeto. Caso seja criado e necessite de namespace igual no projeto, diferenciar ao final do namespace com ".$nomedapasta"
+    - O mesmo namespace é permitido desde que a classe seja diferente.
+    - Exemplo: \MeuApp -> MeuApp
+               \Teste\MeuApp -> MeuApp.Teste
+    - Ideal criar um namespace e uma classe por arquivo.
+
+  - Using
+    - Tudo que for necessário usar no .Net deverá ser importado na cláusula using.
+    - Serve para organizar organizar e estruturar em pastas e namespaces.
+    - Organização física são as pastas.
+    - Organização lógica são os namespaces.
+
+  - Variáveis
+    - Algo utilizado para armazenar uma informação. 
+    - E esta informação pode ser alterada, variar a qualquer momento.
+    - C# por ser fortemente tipada ela existem os tipos.
+    - Na sintaxe o tipo vem antes do nome da variável.   
+      - Exemplo:
+        - int idade; //OK iniciar variável com 0.
+        - int idade = 25; //OK iniciar variável com 25.
+        - var idade = 25; //OK iniciar variável com 25.
+        - var idade; // ERRADO tipo não informado.
+    - Nome de variável uma boa prática é criá-la com nomes que tenham haver com a informação que a variável irá armazenar.
+    - Por convenção variáveis iniciam com letra minúscuas.
+
+
+  - Constantes
+  - Palavras reservadas
+  - Comentários
+  - Tipos primitivos
+  - System
+  - Byte
+  - Números inteiros
+  - Números reais
+  - Boolean
+  - Char
+  - String
+  - Var
+  - Object
+  - Nullabel Types
+  - Alias
+  - Valores padrões
+  - Conversão implícita
+  - Conversão explícita
+  - Parse
+  - Convert
+  - Convertendo tipos
+  - Operadores aritméticos
+  - Operadores de atribuição
+  - Operadores de comparação
+  - Utilizando operadores
+  - Operadores lógicos
+  - Operador condicional: IF
+  - Utilizando IF
+  - Estrutura condicional: Switch
+  - Laços de repetição: For
+  - Laços de repetição: While
+  - Laços de repetição: Do/While
+  - Métodos e funções
+  - Métodos e funções: Prática
+  - Value Types e Reference Types
+  - Value Types e Reference Types: Prática
+  - Structs
+  - Structs: Prática
+  - Enums
+  - Revisão
 
