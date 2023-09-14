@@ -1,0 +1,14 @@
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\bin\Debug\net7.0\MeuApp.exe
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\bin\Debug\net7.0\MeuApp.deps.json
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\bin\Debug\net7.0\MeuApp.runtimeconfig.json
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\bin\Debug\net7.0\MeuApp.dll
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\bin\Debug\net7.0\MeuApp.pdb
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\MeuApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\MeuApp.AssemblyInfoInputs.cache
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\MeuApp.AssemblyInfo.cs
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\MeuApp.csproj.CoreCompileInputs.cache
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\MeuApp.dll
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\refint\MeuApp.dll
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\MeuApp.pdb
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\MeuApp.genruntimeconfig.cache
+C:\Projetos\CSharp\FundamentosCSharp\MeuApp\obj\Debug\net7.0\ref\MeuApp.dll
