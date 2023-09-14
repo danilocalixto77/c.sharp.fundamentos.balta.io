@@ -104,36 +104,36 @@
     - Paramentros
       - -o para definir o local do projeto
 
-    - Fluxo de execução
-      - Para checar se você está em um projeto C# verifice que na pasta há um arquivo com extenção ".csproj"
-      - Ao iniciar um projeto executar dentro da pasta do projeto o comando : "dotnet restore" , para que o dotnet faça uma atualização dos arquivos, baixando todas as dependências e pacotes adicionais ao dotnet que esta aplicação precisa.
-      - Compilação via linha de comando "dotnet build".
-      - Comando para limpesa dos arquivos de cash. "dotnet clean".
-      - Para execuar a aplicação. "dotnet run"
-        -  Comandos da aula:
-          - dotnet restore
-          - dotnet clean
-          - dotnet build
-          - dotnet run
+  - Fluxo de execução
+    - Para checar se você está em um projeto C# verifice que na pasta há um arquivo com extenção ".csproj"
+    - Ao iniciar um projeto executar dentro da pasta do projeto o comando : "dotnet restore" , para que o dotnet faça uma atualização dos arquivos, baixando todas as dependências e pacotes adicionais ao dotnet que esta aplicação precisa.
+    - Compilação via linha de comando "dotnet build".
+    - Comando para limpesa dos arquivos de cash. "dotnet clean".
+    - Para execuar a aplicação. "dotnet run"
+      -  Comandos da aula:
+        - dotnet restore
+        - dotnet clean
+        - dotnet build
+        - dotnet run
 
-    - Variáveis de ambiente
-      - Utilizadas para definir o local em que a aplicação estará sendo executada, existem casos de projetos que possuem ambientes de desenvolvimento, testes, homologação e produto. 
-      - Exemplos de execução passando parâmetros para definição de ambiente:
-        - dotnet run --environment=$SEU_AMBIENTE
-        - dotnet run --environment=$development
+  - Variáveis de ambiente
+    - Utilizadas para definir o local em que a aplicação estará sendo executada, existem casos de projetos que possuem ambientes de desenvolvimento, testes, homologação e produto. 
+    - Exemplos de execução passando parâmetros para definição de ambiente:
+      - dotnet run --environment=$SEU_AMBIENTE
+      - dotnet run --environment=$development
 
-    - Estrutura do App
-      - Executando dentro da pasta da aplicação "code ." Irá abrir o vscode com os arquivos do projeto.
-      - Arquivo base da estrutura
-        MeuApp.csproj (arquivo formato XML)
-        Program.cs  (arquivo codigo fonte)
+  - Estrutura do App
+    - Executando dentro da pasta da aplicação "code ." Irá abrir o vscode com os arquivos do projeto.
+    - Arquivo base da estrutura
+      - MeuApp.csproj (arquivo formato XML)
+      - Program.cs  (arquivo codigo fonte)
 
-    - Debug
-      - Executado modo debug pelo VSCode, Ctrl+Shift+D.
-      - Pasta .vscode deve existir nas pastas do seu projeto.
-      - Caso não exista, ao entrar na opção de debug o vscode irá perguntar se deseja criar o "launch.jason" file, neste momento será criada a pasta ".vscode" que habilita para executar o debug da aplicação. Selecionar um projeto ".Net Core".
+  - Debug
+    - Executado modo debug pelo VSCode, Ctrl+Shift+D.
+    - Pasta .vscode deve existir nas pastas do seu projeto.
+    - Caso não exista, ao entrar na opção de debug o vscode irá perguntar se deseja criar o "launch.jason" file, neste momento será criada a pasta ".vscode" que habilita para executar o debug da aplicação. Selecionar um projeto ".Net Core".
 
-    - Revisão
+  - Revisão
 
 ### Linguagem de Programação
 
@@ -176,21 +176,68 @@
     - C# por ser fortemente tipada ela existem os tipos.
     - Na sintaxe o tipo vem antes do nome da variável.   
       - Exemplo:
-        - int idade; //OK iniciar variável com 0.
+        - int idade; //OK inicia variável com 0.
         - int idade = 25; //OK iniciar variável com 25.
         - var idade = 25; //OK iniciar variável com 25.
         - var idade; // ERRADO tipo não informado.
     - Nome de variável uma boa prática é criá-la com nomes que tenham haver com a informação que a variável irá armazenar.
-    - Por convenção variáveis iniciam com letra minúscuas.
-
+    - Por convenção variáveis iniciam com letra minúsculas.
 
   - Constantes
+    - Semelhante a variável, entretanto não pode ser alterado.
+    - Diferente do var utiliza-se const.
+    - Por convenção declara-se em maíucula e separadas por "_".
+      - Exemplo:
+        - const int IDADE_MINIMA; //OK inicia variável com 0, entretanto não é ideal.
+        - const int IDADE_MINIMA = 25; //OK inicia com 25.
+        - const var IDADE_MINIMA = 25; //ERRADO não utiliza-se var.
+        - const var IDADE_MINIMA; //ERRADO não utiliza-se var.
+
   - Palavras reservadas
+    - São Keywords reservadas ao C# que não é permitida a utilização para criação de variáveis.
+
   - Comentários
+    - No C# há três forma de comentário.
+      - Primeira: 
+        - // -> Manual para uma linha
+        - Ctrl + K + C -> Automático via vscode marca bloco selecionado.
+        - Ctrl + K + U -> Automático via vscode desmarca bloco selecionado.
+      - Segunda:
+        - /* */ -> Manual para um bloco
+      - Terceira:
+        - Notação XML ///<>.
+
   - Tipos primitivos
+    - São os tipos bases que temos no .Net.
+    - Também conhecidos como "built-in types".
+    - Também chamados de Tipos de Valor (value type).
+      - Esses tipos de valor são classificados como:
+        - Tipos Simpes (Simple Type)
+        - Enumeradores (Enums)
+        - Estruturas (Structs)
+        - Tipos Nulos (Nullable Types)
+    - Cada tipo primitivo possue uma capacidade:
+      int -> -2,147,483,648 até 2,147,483,648
+
   - System
+    - É o tipo raiz. Tipo base. Todos deviram do system.
+
   - Byte
+    - Utilizado para representar um byte.
+    - O tipo "sbyte" permite valores negativos.
+    - São tipos chamados:
+      - Signed: Com sinal "-".
+      - Unsigned: Sem sinal.
+    - Definições:
+      - byte (8 bits) -> Vai de 0 até 255.
+      - sbyte (8 bits) -> Vai de -128 até 127.
+    - Exemplo : byte nomeVariavel = 255
+
   - Números inteiros
+    - 
+
+
+
   - Números reais
   - Boolean
   - Char
