@@ -1,15 +1,15 @@
 # Curso: Fundamentos do C# - André Baltieri (Balta.io)
 
-###Linguagens e Compiladores
+### Linguagens e Compiladores
   - Apresentação
   - Linguagens de programação
   - Alto e baixo nível
-    -- De alto nível.
+    - De alto nível.
   - Linguagem compilada e interpretada
   - Compilada e interpretada
-    -- C# é uma linguagem compilada.
+    - C# é uma linguagem compilada.
   - Tipagem de dados
-    -- Fortemente tipada.
+    - Fortemente tipada.
   - Revisão
 
 ### C#
