@@ -226,6 +226,7 @@
     - Utilizado para representar um byte.
     - O tipo "sbyte" permite valores negativos.
     - São tipos chamados:
+      - Ocupação de memória.
       - Signed: Com sinal "-".
       - Unsigned: Sem sinal.
     - Definições:
@@ -234,14 +235,80 @@
     - Exemplo : byte nomeVariavel = 255
 
   - Números inteiros
-    - 
-
-
+    - São representados pelo:
+      - short/ushort
+      - int/uint
+      - long/ulong
+    - São tipos com "u" no inicio da declaração são:
+      - Unsigned: Sem sinal.
+      - Signed: Com sinal "-".
+      - Desta forma em caso da sua variável não trabalhar com valores negativos, é um tipo aconselhável.
+   - Definições:
+     - Ocupação de memória.
+     - short (16 bits)  
+       - -32.768 até 32.767
+     - ushort (16 bits)  
+       - 0 até 65.535
+     - int (32 bits)  
+       - -2.147.483.648 até 2.147.483.647
+     - uint (32 bits)  
+       - 0 até 4.294.967.295
+     - long (64 bits)  
+       - -9.223.372.036.854.775.808 até 9.223.372.036.854.775.807
+     - ulong (64 bits) 
+       - 0 até 18.446.744.073.709.551.615 
+     - Em caso de declaração somente com o var:
+       - var idade = 46; 
+       - Por padrão o C# irá formatar como tipo int.
 
   - Números reais
+    - Número que exitem maior precisão, ou seja, valores fracionados.
+    - Permitem positivos ou negativos, entretanto não possuem a declaração usigned.
+    - Definições:
+      - Ocupação de memória.
+      - float (notação F) (32 bits)
+        - -3.402823e38 até 3.402823e38  
+      - double (64 bits)
+        - -1.79769313486232e308 até 1.79769313486232e308
+      - decimal (notação M) (128 bits)
+        - (+ ou -) 1.0 x10e-28 até 7.9x10e28   
+    - Declaração
+      - float salarioMinimo = 1.500f;
+      - double salario = 1.600
+      - decimal reajusteSalarial = 20.50m;
+      - Em caso de declaração somente com o var:
+        - var salario = 1.400; 
+        - Por padrão o C# irá formatar como tipo Double.
+
   - Boolean
+    - Armazena true ou false(verdadeiro ou falso).
+    - Definição:
+      - Ocupação de memória:
+        - bool (8 bits)
+        - true ou false
+
   - Char
+    - Utilizado para armazernar um caracter no formato Unicode.
+    - Atribuição do valor é por ASPAS SIMPLES ' '.
+    - Definição: 
+      - Ocupação de memória.
+        - char (16 bits)
+        - Qualquer caractere.
+
   - String
+    - Armazena uma lista/conjunto de caracteres (char).
+    - Atribuição do valor é por ASPAS DUPLAS " ".
+    - É um tipo com imensas possbilidades e temas a se tratar.
+    - Definição:
+      - Ocupação de memória.  
+        - string(?) - É definido pelo tamanho declarado.
+    - Declaração:
+      - string primeiraLetra = "D";
+      - string texto = "Meu texto completo";
+      - var documento = "123456789abcde";
+        
+
+
   - Var
   - Object
   - Nullabel Types
