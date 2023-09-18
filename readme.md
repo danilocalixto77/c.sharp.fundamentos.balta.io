@@ -310,10 +310,15 @@
   - Var
     - O var ele assimila o primeiro tipo declarado. 
     - A partir do momento que você atriui um valor para variável, o C# define esse tipo para variável.
-  
-
 
   - Object
+    - Tipo genérico que recebe qualquer valor ou objeto.
+    - Da mesma maneira do var assume o primeiro valor atribuido.
+    - Uma variável declarada como object não exige que seja atribuido o tipo inicialmente.
+    
+
+
+
   - Nullabel Types
   - Alias
   - Valores padrões
