@@ -307,9 +307,12 @@
       - string texto = "Meu texto completo";
       - var documento = "123456789abcde";
         
-
-
   - Var
+    - O var ele assimila o primeiro tipo declarado. 
+    - A partir do momento que você atriui um valor para variável, o C# define esse tipo para variável.
+  
+
+
   - Object
   - Nullabel Types
   - Alias
