@@ -341,6 +341,26 @@
       - string ==> ""
 
   - Conversão implícita
+    - O a transformação de um dado de um tipo X para um tipo Y.
+    - Exitem dois tipos: implícitas e explícitas.
+    - Conversão implícita. 
+      - Pode ser executada apendas com passagem de dados.
+      - São tipos diferentes, mas com valores compatíveis.
+      - Ou também se o tamanho do dado for compatível.
+      - Definições:
+        - sbyte
+          - short, int, long, float, double, decimal
+        - byte
+          - short, ushort, int, uint, long ulong, float, double, decimal
+        - short
+          - int, long, float, double ou decimal.
+        - ushort
+          - int uint, long, ulong, float, double ou decimal
+        - int
+          - long, float, double or decimal.
+    - Também conhecido com cast implícito.
+
+
   - Conversão explícita
   - Parse
   - Convert
