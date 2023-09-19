@@ -8,6 +8,14 @@ namespace MeuApp
         {
             var texto = "Testando";
             Console.WriteLine(texto);
+
+            int? idade = 46;
+            Console.WriteLine(idade);
+            idade = null;
+            Console.WriteLine(idade);
+            idade = 0;
+            Console.WriteLine(idade);
+
         }
     }
 }

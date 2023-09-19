@@ -336,7 +336,7 @@
       - int ==> 0
       - float ==> 0
       - decimal ==> 0
-      - bool ==> fase
+      - bool ==> false
       - char ==> '\0'
       - string ==> ""
 
