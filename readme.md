@@ -316,12 +316,30 @@
     - Da mesma maneira do var assume o primeiro valor atribuido.
     - Uma variável declarada como object não exige que seja atribuido o tipo inicialmente.
     
-
-
-
   - Nullabel Types
+    - Sgnifica vazio, nada
+    - Diferente de zero ou uma string vazia.
+    - Todo tipo primitivo pode receber o valor null.
+    - Atribuição desse tipo é pelo "null"
+    - Sempre que for feito a atribuição de null. Deve ser feita da seguinte forma:
+      - int? idade = null; //inserindo-se uma interrogação na frente do tipo.
+
   - Alias
+    - É uma apeido que todo tipo no .NET tem.
+    - Exemplo:
+      - System.String tem o alias string.
+      - Int32 tem o alias int.
+
   - Valores padrões
+    - Todos os tipos built-in possuem um valor padrão.
+    - Se nenhum valor for informado, segue logo abaixo:
+      - int ==> 0
+      - float ==> 0
+      - decimal ==> 0
+      - bool ==> fase
+      - char ==> '\0'
+      - string ==> ""
+
   - Conversão implícita
   - Conversão explícita
   - Parse
