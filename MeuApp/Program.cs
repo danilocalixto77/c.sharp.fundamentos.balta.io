@@ -6,6 +6,7 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
+            /*
             var texto = "Testando";
             Console.WriteLine(texto);
 
@@ -15,6 +16,14 @@ namespace MeuApp
             Console.WriteLine(idade);
             idade = 0;
             Console.WriteLine(idade);
+            */
+            int inteiro = 100;
+            uint interiSemSinal = (uint)inteiro; //Conversão explícita.
+            Console.WriteLine(inteiro);
+
+            int outroInteiro = int.Parse("1000"); //Parse
+            Console.WriteLine(outroInteiro);
+
 
         }
     }

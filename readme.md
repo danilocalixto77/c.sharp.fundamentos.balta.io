@@ -360,10 +360,19 @@
           - long, float, double or decimal.
     - Também conhecido com cast implícito.
 
-
   - Conversão explícita
+    - É a conversão da qual temos obrigatóriamente informar o tipo que está sendo convertido.
+
   - Parse
+    - Método presente em todo tipo primitivo.
+    - O parse sempre espera uma cadeia de "string" para um outro tipo qualquer.
+    - Caso haja incompatibilidade, ocorrerá um erro.
+    - Ex: int numeroInteiro = int.Parse("46");
+
   - Convert
+    - 
+
+
   - Convertendo tipos
   - Operadores aritméticos
   - Operadores de atribuição
