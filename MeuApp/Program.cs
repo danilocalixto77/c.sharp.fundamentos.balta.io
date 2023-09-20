@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks.Dataflow;
 
 namespace MeuApp
@@ -40,6 +41,41 @@ namespace MeuApp
             Console.WriteLine(real);
 
             */
+
+            /*  
+            //Operadores aritmeticos
+                      
+            int x = 2;
+            x = 75 / 23 + (2 * 3); //Alterando o operador obtem-se valores conforme operador. + - * /
+            Console.WriteLine(x);
+
+            // Operadores de atribuição
+            int y = 2;
+            y += 5; //Alterando o operador obtem-se valores conforme o operador. + - * /
+            y++; // Também pode utilizar ++ ou -- para auto incremento/decremento em loops.
+            Console.WriteLine(y);
+            
+            // Operadores de comparação
+            int x = 20;
+            Console.WriteLine(x == 10); // False
+            Console.WriteLine(x != 10); // True
+            Console.WriteLine(x >= 10); // True
+            Console.WriteLine(x <= 10); // False
+            Console.WriteLine(x > 10); // True
+            Console.WriteLine(x < 10); // False            
+            */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
