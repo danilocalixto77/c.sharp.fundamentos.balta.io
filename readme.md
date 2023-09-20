@@ -376,12 +376,56 @@
     - Ex: int inteiro = Convert.ToInt32("1000");
 
   - Convertendo tipos
-    - 
+    - Conversão Implícita
+    - Conversão Explícita
+    - Parse
+    - Convert
 
   - Operadores aritméticos
+    - Definições:
+      - Soma -> +
+      - Subtração -> -
+      - Multiplicação -> *
+      - Divisão -> /
+    - Ordem de precedência multiplicação e divisão calculado primeiro.
+    - Para mudar a ordem de precedência, utilizar parâmetros.
+    - Tipo aceitos: short, int, fload, double e decimal.
+
   - Operadores de atribuição
+    - O sinal de = é usado para atribuir valor.
+    - Podemos utilizar operadores aritméticos para atribuir.
+    - x += 5 é o mesmo x = x + 5
+    - Muito comum a utilização em loops de repetição.
+    - Ex: 
+      - int x = 0; // Atribuição 
+      - x += 5; // x = x + 5;
+      - x -= 1; // x = x - 1;
+      - x *= 10; // x = x * 10;
+      - x /= 2; // x = x / 2;
+ 
   - Operadores de comparação
+    - Tem a finalidade de comparar qualquer tipo de dados.
+    - O retorno de uma comparação é sempre True ou False.
+    - Definições:
+      - Igual -> ==
+      - Diferente -> !=
+      - Maior que -> >
+      - Menor que -> <
+      - Maior ou igual a -> >=
+      - Menor ou igual a -> <=
+    - Ex:
+      - int x = 25; //atribuição
+      - x == 0; // False
+      - x != 0; // True  
+      - x > 0; // True  
+      - x < 0; // False  
+      - x >= 0; // True
+      - x <= 0; // False  
+
   - Utilizando operadores
+    - Exemplos de atribuição  e comparação.
+
+
   - Operadores lógicos
   - Operador condicional: IF
   - Utilizando IF
@@ -397,4 +441,5 @@
   - Structs: Prática
   - Enums
   - Revisão
+
 
