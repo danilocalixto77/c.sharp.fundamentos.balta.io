@@ -370,10 +370,14 @@
     - Ex: int numeroInteiro = int.Parse("46");
 
   - Convert
-    - 
-
+    - O parse é uma extensão dos tipos primitivos. Entretanto o convert é um a classe, é um objeto. 
+    - Convert é semalhante ao Parse, entretanto, funciona para todos outros tipos de valores. Não se restringindo somente a string como no caso do Parse.
+    - Contudo o Convert também irá "tentar" converter, caso não seja possível ocorrerá um erro.
+    - Ex: int inteiro = Convert.ToInt32("1000");
 
   - Convertendo tipos
+    - 
+
   - Operadores aritméticos
   - Operadores de atribuição
   - Operadores de comparação
