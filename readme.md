@@ -425,8 +425,15 @@
   - Utilizando operadores
     - Exemplos de atribuição  e comparação.
 
-
   - Operadores lógicos
+    - Usado para comparar uma condição.
+    - Sempre retorna verdadeiro ou falso (true or false)
+    - E / AND -> &&
+    - OU / OR -> ||
+    - NEGAÇÃO -> !
+
+   
+
   - Operador condicional: IF
   - Utilizando IF
   - Estrutura condicional: Switch

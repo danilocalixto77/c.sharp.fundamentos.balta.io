@@ -63,9 +63,55 @@ namespace MeuApp
             Console.WriteLine(x <= 10); // False
             Console.WriteLine(x > 10); // True
             Console.WriteLine(x < 10); // False            
+            
+
+            //Operadores lógicos
+            int x = 12;
+            bool andE = (x > 25) && (x < 40); //false
+            System.Console.WriteLine($"O operador retornou: {andE}");
+            bool orOu = (x > 25) && (x < 40); //true
+            System.Console.WriteLine($"O operador retornou: {orOu}");
+            bool negacao = !(x < 25); //false
+            System.Console.WriteLine($"O operador retornou: {orOu}");
+
+            //Utilizando IF
+            int idade = 10;
+            int maiorIdade = 21;
+            int idadeMaxima = 60;
+            if (idade < maiorIdade)
+            {
+                System.Console.WriteLine("Menor de idade!");
+            }
+            else if (idade > idadeMaxima)
+            {
+                System.Console.WriteLine("Idoso!");
+            }
+            else if (idade <= idadeMaxima)
+            {
+                System.Console.WriteLine("Jovem!");
+            }
+            else
+            {
+                System.Console.WriteLine("Maior de idade!");
+            }
+            System.Console.WriteLine("Finalizou!");
+
+            //Caso uma condição seja atendida e não queira validar outras condições.
+            if (idade < maiorIdade)
+            {
+                return;
+            }
+            else
+            {
+                System.Console.WriteLine("1");
+                System.Console.WriteLine("2");
+                System.Console.WriteLine("3");
+                System.Console.WriteLine("4");
+                System.Console.WriteLine("5");
+                System.Console.WriteLine("6");
+            }
+
             */
-
-
 
 
 
