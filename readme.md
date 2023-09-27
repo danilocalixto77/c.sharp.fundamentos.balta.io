@@ -432,11 +432,14 @@
     - OU / OR -> ||
     - NEGAÇÃO -> !
 
-   
-
   - Operador condicional: IF
+    - É o "SE"
+    - o IF também é composto pelo "ELSE IF" e o "ELSE".
+
   - Utilizando IF
+
   - Estrutura condicional: Switch
+
   - Laços de repetição: For
   - Laços de repetição: While
   - Laços de repetição: Do/While
