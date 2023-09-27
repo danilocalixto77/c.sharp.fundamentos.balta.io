@@ -439,6 +439,10 @@
   - Utilizando IF
 
   - Estrutura condicional: Switch
+    - Em inglês significa chaver.
+    - Execução em cascata.
+    - A execução deve ser parada usando o comando "break".
+    - E possui uma condição "default".
 
   - Laços de repetição: For
   - Laços de repetição: While
