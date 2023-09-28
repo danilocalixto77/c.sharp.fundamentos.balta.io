@@ -433,7 +433,7 @@
 | Operador | Sinal |
 | -------- | ----- |
 | E / AND | && |
-| OU / OR | pipepipe |
+| OU / OR | "|""|" |
 | NEGAÇÃO | !  |
 
     - Exemplos:
