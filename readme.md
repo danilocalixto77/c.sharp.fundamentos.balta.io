@@ -434,7 +434,7 @@
 | -------- | ----- |
 | E / AND | && |
 | OU / OR | <code>&#124;&#124;</code> |
-| NEGAÇÃO | !  |
+| NEGAÇÃO | ! |
 
 
     - Exemplos:
@@ -450,7 +450,6 @@
   - Operador condicional: IF
     - É o "SE"
     - o IF também é composto pelo "ELSE IF" e o "ELSE".
-
   - Utilizando IF
     - Exemplos:
 ```
