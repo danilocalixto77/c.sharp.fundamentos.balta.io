@@ -433,7 +433,7 @@
 | Operador | Sinal |
 | -------- | ----- |
 | E / AND | && |
-| OU / OR | <code>|</code> |
+| OU / OR | <code>&#124;</code> |
 | NEGAÇÃO | !  |
 
 
