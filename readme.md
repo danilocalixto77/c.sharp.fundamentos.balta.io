@@ -428,11 +428,13 @@
   - Operadores lógicos
     - Usado para comparar uma condição.
     - Sempre retorna verdadeiro ou falso (true or false)
+
 | Operador | Sinal |
 | -------- | ----- |
 | E / AND | && |
 | OU / OR | || |
 | NEGAÇÃO | !  |
+
     - Exemplos:
 ```
     int x = 12;
