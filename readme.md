@@ -431,14 +431,23 @@
     - E / AND -> &&
     - OU / OR -> ||
     - NEGAÇÃO -> !
+    - Exemplos:
+```
+    int x = 12;
+    bool andE = (x > 25) && (x < 40); //false
+    System.Console.WriteLine($"O operador retornou: {andE}");
+    bool orOu = (x > 25) && (x < 40); //true
+    System.Console.WriteLine($"O operador retornou: {orOu}");
+    bool negacao = !(x < 25); //false
+    System.Console.WriteLine($"O operador retornou: {orOu}");
 
+```
   - Operador condicional: IF
     - É o "SE"
     - o IF também é composto pelo "ELSE IF" e o "ELSE".
 
   - Utilizando IF
     - Exemplos:
-
 ```
     int idade = 10;
     int maiorIdade = 21;
@@ -477,17 +486,12 @@
     }
 
 ```
-
-
-
-
   - Estrutura condicional: Switch
-    - Em inglês significa chaver.
+    - Em inglês significa chavear.
     - Execução em cascata.
     - A execução deve ser parada usando o comando "break".
     - E possui uma condição "default".
     - Exemplos: 
-
 ```
     string valor = "maria";
     switch (valor)
@@ -507,16 +511,11 @@
 
     }
 ```
-
-
   - Laços de repetição: For
     - Em inglês seria "para".
     - Os laços de repetição são comumente utilizado para iterar algo que necessite executar uma ação N vezes.
     - Definições:
-      - possue 3 parâmetros:
-        - Contador
-        - Condição
-        - Incremento
+      - possue 3 parâmetros: for (contador; condição; incremento);
     - Exemplos:
 ```
     for (var i = 0; i <= 5; i++)

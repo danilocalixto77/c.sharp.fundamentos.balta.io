@@ -64,7 +64,9 @@ namespace MeuApp
             Console.WriteLine(x > 10); // True
             Console.WriteLine(x < 10); // False            
             
+            */
 
+            /*
             //Operadores lógicos
             int x = 12;
             bool andE = (x > 25) && (x < 40); //false
@@ -73,7 +75,6 @@ namespace MeuApp
             System.Console.WriteLine($"O operador retornou: {orOu}");
             bool negacao = !(x < 25); //false
             System.Console.WriteLine($"O operador retornou: {orOu}");
-            */
 
             //Utilizando IF
             int idade = 10;
@@ -111,9 +112,7 @@ namespace MeuApp
                 System.Console.WriteLine("5");
                 System.Console.WriteLine("6");
             }
-
-
-            /*
+            
             //Utilizando o Swithc
             string valor = "maria";
             switch (valor)
