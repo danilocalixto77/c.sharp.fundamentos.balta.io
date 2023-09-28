@@ -1,63 +1,61 @@
 # Curso: Fundamentos do C# - André Baltieri (Balta.io)
 
-### Linguagens e Compiladores
+## Linguagens e Compiladores
   - Apresentação
   - Linguagens de programação
   - Alto e baixo nível
-    - De alto nível.
+  - De alto nível.
   - Linguagem compilada e interpretada
   - Compilada e interpretada
-    - C# é uma linguagem compilada.
+  - C# é uma linguagem compilada.
   - Tipagem de dados
-    - Fortemente tipada.
+  - Fortemente tipada.
   - Revisão
-
-### C#
- - Por que utilizar C#?
-   - Linguagem com alto nível de maturidade.
-   - Possui uma enorme comunidade.
-   - Microsoft por trás dos bastidores com o suporte.
- - C# como primeira linguagem
-   - Possui muito material e é altamente desafiadora.
- - Código gerenciado
-   - Gerenciado pelo Runtime CLR (Common Language Runtime). 
-   - Gerencia memória, segurança e outro recursos.
- - Compilação e gerenciamento
-   - Cada linguagem possue seu compilador.
-   - Compilação inicial não gera código binário.
-   - Criada a IL (Intermediate language)
-   - E depois o binário será gerado.
- - IL
-   - Todas as linguagens Microsoft inicialmente são compilada para IL.
-   - C#, VB.NET, F#, Cobol, .Net
-   - Isso permite ter código de linguagens diferentes no mesmo projeto.
-   - C# e VB.NET 
-   - Nunca no mesmo arquivo, somente em arquivos diferentes.
-   - Entretanto prática não é muito comum.
-   - Ao final é gerado o binário que é igual para todas linguagens.
-   - O processo de conversão do IL para o Binário é conhecida como JIT.
-   - JIT (Just in Time).
- - Revisão
-
-### Frameworks
+## C#
+  - Por que utilizar C#?
+    >Linguagem com alto nível de maturidade.
+    >Possui uma enorme comunidade.
+    >Microsoft por trás dos bastidores com o suporte.
+  - C# como primeira linguagem
+    >Possui muito material e é altamente desafiadora.
+  - Código gerenciado
+    >Gerenciado pelo Runtime CLR (Common Language Runtime). 
+    >Gerencia memória, segurança e outro recursos.
+  - Compilação e gerenciamento
+    >Cada linguagem possue seu compilador.
+    >Compilação inicial não gera código binário.
+    >Criada a IL (Intermediate language)
+    >E depois o binário será gerado.
+  - IL
+    >Todas as linguagens Microsoft inicialmente são compilada para IL.
+    >C#, VB.NET, F#, Cobol, .Net
+    >Isso permite ter código de linguagens diferentes no mesmo projeto. Como: C# e VB.NET.
+    >Nunca no mesmo arquivo, somente em arquivos diferentes.
+    >Entretanto prática não é muito comum.
+    >Ao final é gerado o binário que é igual para todas linguagens.
+    >O processo de conversão do IL para o Binário é conhecida como JIT.
+    >JIT (Just in Time).
+  - Revisão
+ 
+## Frameworks
 
   - Frameworks
-    - São estruturas prontas, que diminuem os riscos dos projetos e agilizam o desenvolvimento.
+    >São estruturas prontas, que diminuem os riscos dos projetos e agilizam o desenvolvimento.
   - .NET Framework
-    - É o legado.
+    >É o legado.
   - .NET Core
-    - É o atual
+    >É o atual
   - .NET Standard
-    - Responsável pela padronização entre as linguagens.
+    >Responsável pela padronização entre as linguagens.
   - .NET 5
-    - É o futuro, com a unificação do .NET Framework com o .NET Core 
+    >É o futuro, com a unificação do .NET Framework com o .NET Core 
   - LTS
-    - Long Term Support, principal opção.
+    >Long Term Support, principal opção.
   - Versionamento
   - Runtime e SDK
-    - Runtime executa.
-    - Software Developmant Kit (SDK) cria as aplicações .NET
-    - Em produção utiliza-se o runtime
+    >Runtime executa.
+    >Software Developmant Kit (SDK) cria as aplicações .NET
+    >Em produção utiliza-se o runtime
   - Revisão
 
 ### .NET
