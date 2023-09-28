@@ -428,11 +428,12 @@
   - Operadores lógicos
     - Usado para comparar uma condição.
     - Sempre retorna verdadeiro ou falso (true or false)
+    - Representação dos operadores:
 
 | Operador | Sinal |
 | -------- | ----- |
 | E / AND | && |
-| OU / OR | "|""|" |
+| OU / OR | pipepipe |
 | NEGAÇÃO | !  |
 
     - Exemplos:
