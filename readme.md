@@ -443,6 +443,28 @@
     - Execução em cascata.
     - A execução deve ser parada usando o comando "break".
     - E possui uma condição "default".
+    - Exemplos: 
+
+```
+    string valor = "maria";
+    switch (valor)
+    {
+        case "joao": System.Console.WriteLine("Não é o cara."); break;
+        case "danilo": System.Console.WriteLine("Esse é o cara."); break;
+        case "maria": System.Console.WriteLine("Ou será que é essa?"); break;
+        default: System.Console.WriteLine("Não encontrei essa pessoa!"); break;
+    }
+
+    bool? valor2 = true;
+    switch (valor2)
+    {
+        case true: System.Console.WriteLine("É Verdadeiro"); break;
+        case false: System.Console.WriteLine("É Falso"); break;
+        default: System.Console.WriteLine("Não encontrei"); break;
+
+    }
+```
+
 
   - Laços de repetição: For
     - Em inglês seria "para".

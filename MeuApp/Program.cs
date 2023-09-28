@@ -111,7 +111,7 @@ namespace MeuApp
                 System.Console.WriteLine("6");
             }
 
-            
+            */
 
             //Utilizando o Swithc
             string valor = "maria";
@@ -130,24 +130,23 @@ namespace MeuApp
                 case true: System.Console.WriteLine("É Verdadeiro"); break;
                 case false: System.Console.WriteLine("É Falso"); break;
                 default: System.Console.WriteLine("Não encontrei"); break;
-
             }
 
-           
+            /*           
 
-            //Utilizando o for
-    for (var i = 0; i <= 5; i++)
-        System.Console.WriteLine($"Contando de 0 a 5: {i}");
+                        //Utilizando o for
+                for (var i = 0; i <= 5; i++)
+                    System.Console.WriteLine($"Contando de 0 a 5: {i}");
 
-    for (var j = 5; j >= 0; j--)
-        System.Console.WriteLine($"Contagem regressiva de 5 a 0: {j}");
+                for (var j = 5; j >= 0; j--)
+                    System.Console.WriteLine($"Contagem regressiva de 5 a 0: {j}");
 
-    for (int k = 1; k <= 5; k++)
-    {
-        System.Console.WriteLine($"Contando de 1 a 5: {k}");
-    }
+                for (int k = 1; k <= 5; k++)
+                {
+                    System.Console.WriteLine($"Contando de 1 a 5: {k}");
+                }
 
- */
+             */
 
         }
     }
