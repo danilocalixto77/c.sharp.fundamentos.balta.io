@@ -453,8 +453,7 @@
         - Condição
         - Incremento
     - Exemplos:
-
-'''
+```
             for (var i = 0; i <= 5; i++)
                 System.Console.WriteLine($"Contando de 0 a 5: {i}");
 
@@ -465,9 +464,7 @@
             {
                 System.Console.WriteLine($"Contando de 1 a 5: {k}");
             }
-'''
-
-
+```
 
 
   - Laços de repetição: While
