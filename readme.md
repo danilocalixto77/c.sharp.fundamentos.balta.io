@@ -438,6 +438,7 @@
 
 
     - Exemplos:
+
 ```
     int x = 12;
     bool andE = (x > 25) && (x < 40); //false
