@@ -428,18 +428,20 @@
   - Operadores lógicos
     - Usado para comparar uma condição.
     - Sempre retorna verdadeiro ou falso (true or false)
-    - E / AND -> &&
-    - OU / OR -> ||
-    - NEGAÇÃO -> !
+| Operador | Sinal |
+| -------- | ----- |
+| E / AND | && |
+| OU / OR | || |
+| NEGAÇÃO | !  |
     - Exemplos:
 ```
     int x = 12;
     bool andE = (x > 25) && (x < 40); //false
-    System.Console.WriteLine($"O operador retornou: {andE}");
+    	System.Console.WriteLine($"O operador retornou: {andE}");
     bool orOu = (x > 25) && (x < 40); //true
-    System.Console.WriteLine($"O operador retornou: {orOu}");
+	System.Console.WriteLine($"O operador retornou: {orOu}");
     bool negacao = !(x < 25); //false
-    System.Console.WriteLine($"O operador retornou: {orOu}");
+    	System.Console.WriteLine($"O operador retornou: {orOu}");
 
 ```
   - Operador condicional: IF
