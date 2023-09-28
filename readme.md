@@ -433,8 +433,9 @@
 | Operador | Sinal |
 | -------- | ----- |
 | E / AND | && |
-| OU / OR | `||` |
+| OU / OR | <code>|</code> |
 | NEGAÇÃO | !  |
+
 
     - Exemplos:
 ```
@@ -445,8 +446,8 @@
 	System.Console.WriteLine($"O operador retornou: {orOu}");
     bool negacao = !(x < 25); //false
     	System.Console.WriteLine($"O operador retornou: {orOu}");
-
 ```
+
   - Operador condicional: IF
     - É o "SE"
     - o IF também é composto pelo "ELSE IF" e o "ELSE".
