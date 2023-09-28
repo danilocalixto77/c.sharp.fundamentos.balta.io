@@ -434,8 +434,7 @@
 | -------- | ----- |
 | E / AND | && |
 | OU / OR | <code>&#124;&#124;</code> |
-| NEGAÇÃO | ! |
-
+| NEGAÇÃO | ! 
 
     - Exemplos:
 
