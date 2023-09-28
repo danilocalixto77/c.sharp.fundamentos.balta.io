@@ -437,6 +437,49 @@
     - o IF também é composto pelo "ELSE IF" e o "ELSE".
 
   - Utilizando IF
+    - Exemplos:
+
+```
+    int idade = 10;
+    int maiorIdade = 21;
+    int idadeMaxima = 60;
+    if (idade < maiorIdade)
+    {
+        System.Console.WriteLine("Menor de idade!");
+    }
+    else if (idade > idadeMaxima)
+    {
+        System.Console.WriteLine("Idoso!");
+    }
+    else if (idade <= idadeMaxima)
+    {
+        System.Console.WriteLine("Jovem!");
+    }
+    else
+    {
+        System.Console.WriteLine("Maior de idade!");
+    }
+    System.Console.WriteLine("Finalizou!");
+
+
+    if (idade < maiorIdade)
+    {
+        return;
+    }
+    else
+    {
+        System.Console.WriteLine("1");
+        System.Console.WriteLine("2");
+        System.Console.WriteLine("3");
+        System.Console.WriteLine("4");
+        System.Console.WriteLine("5");
+        System.Console.WriteLine("6");
+    }
+
+```
+
+
+
 
   - Estrutura condicional: Switch
     - Em inglês significa chaver.

@@ -73,6 +73,7 @@ namespace MeuApp
             System.Console.WriteLine($"O operador retornou: {orOu}");
             bool negacao = !(x < 25); //false
             System.Console.WriteLine($"O operador retornou: {orOu}");
+            */
 
             //Utilizando IF
             int idade = 10;
@@ -96,7 +97,7 @@ namespace MeuApp
             }
             System.Console.WriteLine("Finalizou!");
 
-            //Caso uma condição seja atendida e não queira validar outras condições.
+
             if (idade < maiorIdade)
             {
                 return;
@@ -111,8 +112,8 @@ namespace MeuApp
                 System.Console.WriteLine("6");
             }
 
-            */
 
+            /*
             //Utilizando o Swithc
             string valor = "maria";
             switch (valor)
@@ -123,7 +124,6 @@ namespace MeuApp
                 default: System.Console.WriteLine("Não encontrei essa pessoa!"); break;
             }
 
-            //Swithc com null type. Implicitamente ou é true ou false, para aceitar null é necessário no tipo colocar "?"
             bool? valor2 = true;
             switch (valor2)
             {
@@ -132,21 +132,19 @@ namespace MeuApp
                 default: System.Console.WriteLine("Não encontrei"); break;
             }
 
-            /*           
+            //Utilizando o for
+            for (var i = 0; i <= 5; i++)
+                System.Console.WriteLine($"Contando de 0 a 5: {i}");
 
-                        //Utilizando o for
-                for (var i = 0; i <= 5; i++)
-                    System.Console.WriteLine($"Contando de 0 a 5: {i}");
+            for (var j = 5; j >= 0; j--)
+                System.Console.WriteLine($"Contagem regressiva de 5 a 0: {j}");
 
-                for (var j = 5; j >= 0; j--)
-                    System.Console.WriteLine($"Contagem regressiva de 5 a 0: {j}");
+            for (int k = 1; k <= 5; k++)
+            {
+                System.Console.WriteLine($"Contando de 1 a 5: {k}");
+            }
 
-                for (int k = 1; k <= 5; k++)
-                {
-                    System.Console.WriteLine($"Contando de 1 a 5: {k}");
-                }
-
-             */
+            */
 
         }
     }
