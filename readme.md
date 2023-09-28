@@ -445,6 +445,30 @@
     - E possui uma condição "default".
 
   - Laços de repetição: For
+    - Em inglês seria "para".
+    - Os laços de repetição são comumente utilizado para iterar algo que necessite executar uma ação N vezes.
+    - Definições:
+      - possue 3 parâmetros:
+        - Contador
+        - Condição
+        - Incremento
+    - Exemplos:
+'''
+            for (var i = 0; i <= 5; i++)
+                System.Console.WriteLine($"Contando de 0 a 5: {i}");
+
+            for (var j = 5; j >= 0; j--)
+                System.Console.WriteLine($"Contagem regressiva de 5 a 0: {j}");
+
+            for (int k = 1; k <= 5; k++)
+            {
+                System.Console.WriteLine($"Contando de 1 a 5: {k}");
+            }
+'''
+
+
+
+
   - Laços de repetição: While
   - Laços de repetição: Do/While
   - Métodos e funções
