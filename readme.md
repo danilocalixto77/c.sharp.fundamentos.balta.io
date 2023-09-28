@@ -434,8 +434,9 @@
 | OU / OR | <code>&#124;&#124;</code> |
 | NEGAÇÃO | ! |
 
-#
-    - Exemplos:
+
+  - Exemplos:
+```
     int x = 12;
     bool andE = (x > 25) && (x < 40); //false
     	System.Console.WriteLine($"O operador retornou: {andE}");
@@ -443,6 +444,7 @@
 	System.Console.WriteLine($"O operador retornou: {orOu}");
     bool negacao = !(x < 25); //false
     	System.Console.WriteLine($"O operador retornou: {orOu}");
+```
 
   - Operador condicional: IF
     - É o "SE"
