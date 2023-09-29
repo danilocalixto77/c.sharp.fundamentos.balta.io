@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics.Contracts;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks.Dataflow;
 
@@ -142,6 +143,39 @@ namespace MeuApp
             {
                 System.Console.WriteLine($"Contando de 1 a 5: {k}");
             }
+
+          
+            //Utilizando o while
+            int valor = 0;
+
+            while (valor <= 5)
+            {
+                System.Console.WriteLine(valor);
+                valor++;
+            }
+
+            valor = 0;
+            while (valor <= 5)
+            {
+                valor++;
+                System.Console.WriteLine(valor);
+            }
+
+            //loop infitino
+            while (true)
+            {
+                System.Console.WriteLine(valor);
+                valor++;
+            }
+
+
+            //Utilizando do/while
+            int valor = 0;
+            do
+            {
+                System.Console.WriteLine(valor);
+                valor++;
+            } while (valor <= 5);
 
             */
 

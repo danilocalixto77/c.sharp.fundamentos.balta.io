@@ -532,11 +532,84 @@
         System.Console.WriteLine($"Contando de 1 a 5: {k}");
     }
 ```
-
-
   - Laços de repetição: While
+    - Em inglês significa "enquanto"
+    - Checa uma condição e verifica se ela é verdadeira no inicio do laço.
+    - Necessita um incremento.
+    - Exemplo:
+
+```
+    int valor = 0;
+
+    while (valor <= 5)
+    {
+        System.Console.WriteLine(valor);
+        valor++;
+    }
+
+    valor = 0;
+    while (valor <= 5)
+    {
+        valor++;
+        System.Console.WriteLine(valor);
+    }
+
+    //loop infitino
+    while (true)
+    {
+        System.Console.WriteLine(valor);
+        valor++;
+    }
+```
+
   - Laços de repetição: Do/While
+    - Em inglês "faça" faça enquanto.
+    - Definido pela palavra do/while
+    - Checa a condição depois de executar pelo menos um loop.
+```
+    int valor = 0;
+    do
+    {
+        System.Console.WriteLine(valor);
+        valor++;
+    } while (valor <= 5);
+
+```
+
   - Métodos e funções
+    - Tem por objetivo segmentar os programas.
+    - Também conhecido como métodos.
+    - O "main" é um exempo de método.
+    - Um método pode ou não possuir retorno, deverá ter um nome, e opcionalmente parâmetros.
+    - Esta camada de nome, parâmetros e retorno compõem uma assinatura.
+    - Por convensão os método iniciam com letra maiúscula.
+    - Exemplo:
+```
+    static void Main(sgring[] args)
+    {
+	//Invocação do método
+	MeuMetodo("C# é legal");
+    }	
+
+    //Definição do método
+    static void MeuMetodo (string parametro)
+    {
+    	Console.WriteLine(parametro);
+    }
+
+
+    static string RetornaNome(string nome, string sobrenome)
+    {
+    	//Retorna o nome e o sobrenome
+        return nome + " " + sobrenome; 
+    }
+
+    //Invocar método
+    var nomeCompleto = RetornaNome("Jose","Silva");
+    Console.WriteLine(nomeCompleto);
+
+```
+
   - Métodos e funções: Prática
   - Value Types e Reference Types
   - Value Types e Reference Types: Prática
