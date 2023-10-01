@@ -760,6 +760,41 @@ Curso: [Balta.io](https://balta.io/)
     ```
   - Structs: Prática
 
+    ´´´
+
+	static void Main(string[] args)
+        {
+            Produto prod = new Produto(1, "Mouse", 5.35f);
+
+            prod.Preco = 25.99f;
+            System.Console.WriteLine(prod.Id);
+            System.Console.WriteLine(prod.Nome);
+            System.Console.WriteLine(prod.Preco);
+        }
+
+
+	struct Produto
+	{
+	    public Produto(int id, string nome, double preco)
+	    {
+	        Id = id;
+	        Nome = nome;
+	        Preco = preco;
+	    }
+	
+	    public int Id;
+	    public string Nome;
+	    public double Preco;
+	
+	    public double PrecoEmDolar(double dolar)
+	    {
+	        return Preco * dolar;
+	    }
+	}
+
+
+´´´
+
 
 
 

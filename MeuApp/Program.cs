@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
 using System.Globalization;
+using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks.Dataflow;
 
@@ -202,6 +203,13 @@ namespace MeuApp
             System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 2"
             */
 
+            Produto prod = new Produto(1, "Mouse", 5.35f);
+
+            prod.Preco = 25.99f;
+            System.Console.WriteLine(prod.Id);
+            System.Console.WriteLine(prod.Nome);
+            System.Console.WriteLine(prod.Preco);
+
 
         }
 
@@ -219,6 +227,26 @@ namespace MeuApp
             )
         {
             return nome + " " + sobrenome + " " + idade.ToString();
+        }
+
+        struct Produto
+        {
+            public Produto(int id, string nome, double preco)
+            {
+                Id = id;
+                Nome = nome;
+                Preco = preco;
+            }
+
+            public int Id;
+            public string Nome;
+            public double Preco;
+
+            public double PrecoEmDolar(double dolar)
+            {
+                return Preco * dolar;
+            }
+
         }
 
     }
