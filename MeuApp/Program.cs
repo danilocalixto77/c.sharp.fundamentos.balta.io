@@ -179,8 +179,29 @@ namespace MeuApp
 
             */
 
+            MeuMetodo();
+
+            string nomeCompleto = RetornaNome("Danilo", "Calixto");
+            System.Console.WriteLine(nomeCompleto);
+
         }
+
+        static void MeuMetodo()
+        {
+            System.Console.WriteLine("C# é Legal!!!");
+        }
+
+        static string RetornaNome(
+            string nome,
+            string sobrenome,
+            int idade = 0)
+        {
+            return nome + " " + sobrenome + " " + idade.ToString();
+        }
+
     }
+
+
 }
 
 
