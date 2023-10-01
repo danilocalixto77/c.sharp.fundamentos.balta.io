@@ -681,9 +681,98 @@ Curso: [Balta.io](https://balta.io/)
 
 
   - Value Types e Reference Types: Prática
-    - Structs
-    - Structs: Prática
-    - Enums
-    - Revisão
+    - Exemplos:
+
+```
+    //Value Type
+    int x = 25;
+    int y = x; //É feito uma cópia 
+    System.Console.WriteLine(x); //x = 25
+    System.Console.WriteLine(y); //y = 25
+    x = 32;
+    System.Console.WriteLine(x); //x = 32
+    System.Console.WriteLine(y); //y = 25
+    //Reference Type
+    var arr1 = new string[2];
+    arr1[0] = "Item 1";
+    var arr2 = arr1;
+    System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 1"
+    System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 1"
+    arr1[0] = "Item 2";
+    System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 2"
+    System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 2"
+```
+
+  - Structs
+    - Tipos de dados estruturados.
+    - Apenas estrutura, o esqueleto.
+    - Armazena outros tipos de dados.
+    - Definido pela palavra: "struct"
+    - Tipo de Valor (Value Type)
+    - Convenção nomenclatura sempre em maíuscula.
+    - Criado a partir da palavra "new".
+    - Estrutura não podem ser criadas dentro de uma classe nem método.
+    ```
+    static void Main(string[] args)
+    {
+      	//Cria uma estrutura
+   	var produto = new Produto()  
+
+	produto.Id = 1;
+  	produto.Titulo = "Mouse";
+  	produto.Proco = 51.99f;
+
+	Console.WriteLine(produto.Id);
+	Console.WriteLine(produto.Titulo);
+	Console.WriteLine(produto.Preco);
+	Console.WriteLine(produto.PrecoEmDolar(5.01f));
+
+    }
+
+    struct Produto
+    {
+	//Metodo Construtor
+	//Metodo Especial não tem retorno
+        //Este método tem o mesmo nome da struct
+	//Ele possue mesmo nome pois é executado sempre que a struct é criada. 
+	//Esse metodo contrutor facilita muito a criação da estrutura.
+
+ 	//Metodo Construtor	
+	public Produto(int id, string titulo, float preco)
+	{
+		Id = id;
+		Titulo = titulo;
+		Preco = preco;
+		
+	}
+	
+      	//Propriedades
+        public int Id;
+  
+        //Metodos
+        public float PrecoEmDolar(float dolar)
+        {
+          return Price * dolar;     
+        }
+
+    }
+
+    ```
+  - Structs: Prática
 
 
+
+
+
+  - Enums
+  - Revisão
+
+
+```
+    static void Main(string[] args)
+    {
+
+
+    }
+
+```

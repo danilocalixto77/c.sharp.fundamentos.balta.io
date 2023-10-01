@@ -178,12 +178,30 @@ namespace MeuApp
                 valor++;
             } while (valor <= 5);
 
-            */
-
+            //Utilizando Métodos
             MeuMetodo();
-
             string nomeCompleto = RetornaNome("Danilo", "Calixto");
             System.Console.WriteLine(nomeCompleto);
+
+            //Value Type
+            int x = 25;
+            int y = x; //É feito uma cópia 
+            System.Console.WriteLine(x); //x = 25
+            System.Console.WriteLine(y); //y = 25
+            x = 32;
+            System.Console.WriteLine(x); //x = 32
+            System.Console.WriteLine(y); //y = 25
+            //Reference Type
+            var arr1 = new string[2];
+            arr1[0] = "Item 1";
+            var arr2 = arr1;
+            System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 1"
+            System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 1"
+            arr1[0] = "Item 2";
+            System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 2"
+            System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 2"
+            */
+
 
         }
 
