@@ -1,4 +1,5 @@
-# Curso: Fundamentos do C# - André Baltieri (Balta.io)
+# Curso: Fundamentos do C# - André Baltieri 
+Curso: [Balta.io](https://balta.io/)
 
 ## Linguagens e Compiladores
   - Apresentação
@@ -61,79 +62,90 @@
 ### .NET
 
   - Instalação
-    - Baixando dotnet do site Microsoft.
-    - Baixando versão mais atual do SDK.
-    - Instalação Windows simples somente next até o final.
-    - Checando versão via Power Shell : dotnet --info
+    > Baixando dotnet do site Microsoft.
+      Baixando versão mais atual do SDK.
+      Instalação Windows simples somente next até o final.
+      Checando versão via Power Shell : dotnet --info
 
   - dotnet cli
-    - Command Line Interface
-    - Comando via CLI dotnet.
-      dotnet --list-sdks
-      dotnet --list-runtimes
-      dotnet -h | --help
-      dotnet --info
+    > CLI Command Line Interface
+    Comandos via CLI dotnet.
+```
+    dotnet --list-sdks
+    dotnet --list-runtimes
+    dotnet -h | --help
+    dotnet --info
+```` 
 
   - VS Code
-    - Baixar Visual Studio Code
-    - Instalar extensões
-      - Necessárias:
-        C# id : ms-dotnettools.csharp
-      - Sugeridas:
-        One Dark Pro
-        vscode-icons id: vscode-icons-team.vscode-icons
-    - Comandos de atalhos do VSCode:
-    - "Ctrl + ," = Abre setting, que pode ser editado por json também.
+    > Baixar Visual Studio Code
+    Instalar extensões
+    Necessárias:
+    C# id : ms-dotnettools.csharp
+    Sugeridas:
+    One Dark Pro -> vscode-icons id: vscode-icons-team.vscode-icons
+    Comandos de atalhos do VSCode:
+    "Ctrl + ," = Abre setting, que pode ser editado por json também.
 
   - Tipos de projeto
-    - Web, API, ML, DLL...
-    - Pra cada projeto deve ser previamente definido para obter o resultado desejado.
-    - Tipo : Class Library - Gera uma DLL.
-    - Tipo : Console Application
-    - Tipo : Web
-    - Tipo : Tests
-    - Comando para criação de projetos:
-      - dotnet new console 	=> Novo Console Application
-      - dotnet new classlib 	=> Novo Class Library
-      - dotnet new web 		=> Novo projeto ASP.NET Core
-      - dotnet new mvc 		=> Novo projeto ASP.NET Core
-      - dotnet new webapi 	=> Novo Projeto ASP.NET Core
-      - dotnet new mstest 	=> Novo projeto Microsoft Teste
-    - Paramentros
-      - -o para definir o local do projeto
+    > Web, API, ML, DLL...
+    Pra cada projeto deve ser previamente definido para obter o resultado desejado.
+    Tipo : Class Library - Gera uma DLL.
+    Tipo : Console Application
+    Tipo : Web
+    Tipo : Tests
+    Comando para criação de projetos:
+
+      ```    
+        dotnet new console 	=> Novo Console Application
+        dotnet new classlib => Novo Class Library
+        dotnet new web 		=> Novo projeto ASP.NET Core
+        dotnet new mvc 		=> Novo projeto ASP.NET Core
+        dotnet new webapi 	=> Novo Projeto ASP.NET Core
+        dotnet new mstest 	=> Novo projeto Microsoft Teste
+      ```
+
+    > Paramentros
+      -o para definir o local do projeto
 
   - Fluxo de execução
-    - Para checar se você está em um projeto C# verifice que na pasta há um arquivo com extenção ".csproj"
-    - Ao iniciar um projeto executar dentro da pasta do projeto o comando : "dotnet restore" , para que o dotnet faça uma atualização dos arquivos, baixando todas as dependências e pacotes adicionais ao dotnet que esta aplicação precisa.
-    - Compilação via linha de comando "dotnet build".
-    - Comando para limpesa dos arquivos de cash. "dotnet clean".
-    - Para execuar a aplicação. "dotnet run"
-      -  Comandos da aula:
-        - dotnet restore
-        - dotnet clean
-        - dotnet build
-        - dotnet run
+    > Para checar se você está em um projeto C# verifice que na pasta há um arquivo com extenção ".csproj"
+    Ao iniciar um projeto executar dentro da pasta do projeto o comando : "dotnet restore" , para que o dotnet faça uma atualização dos arquivos, baixando todas as dependências e pacotes adicionais ao dotnet que esta aplicação precisa.
+    Compilação via linha de comando "dotnet build".
+    Comando para limpesa dos arquivos de cash. "dotnet clean".
+    Para execuar a aplicação. "dotnet run"
+    Comandos da aula:
+
+      ```
+        dotnet restore
+        dotnet clean
+        dotnet build
+        dotnet run
+      ```
 
   - Variáveis de ambiente
-    - Utilizadas para definir o local em que a aplicação estará sendo executada, existem casos de projetos que possuem ambientes de desenvolvimento, testes, homologação e produto. 
-    - Exemplos de execução passando parâmetros para definição de ambiente:
-      - dotnet run --environment=$SEU_AMBIENTE
-      - dotnet run --environment=$development
+    > Utilizadas para definir o local em que a aplicação estará sendo executada, existem casos de projetos que possuem ambientes de desenvolvimento, testes, homologação e produto. 
+    Exemplos de execução passando parâmetros para definição de ambiente:
+
+      ```
+      dotnet run --environment=$SEU_AMBIENTE
+      dotnet run --environment=$development
+      ```     
 
   - Estrutura do App
-    - Executando dentro da pasta da aplicação "code ." Irá abrir o vscode com os arquivos do projeto.
-    - Arquivo base da estrutura
-      - MeuApp.csproj (arquivo formato XML)
-      - Program.cs  (arquivo codigo fonte)
+    > Executando dentro da pasta da aplicação "code ." Irá abrir o vscode com os arquivos do projeto.
+    Arquivo base da estrutura
+    MeuApp.csproj (arquivo formato XML)
+    Program.cs  (arquivo codigo fonte)
 
   - Debug
-    - Executado modo debug pelo VSCode, Ctrl+Shift+D.
-    - Pasta .vscode deve existir nas pastas do seu projeto.
-    - Caso não exista, ao entrar na opção de debug o vscode irá perguntar se deseja criar o "launch.jason" file, neste momento será criada a pasta ".vscode" que habilita para executar o debug da aplicação. Selecionar um projeto ".Net Core".
+    >Executado modo debug pelo VSCode, Ctrl+Shift+D.
+    Pasta .vscode deve existir nas pastas do seu projeto.
+    Caso não exista, ao entrar na opção de debug o vscode irá perguntar se deseja criar o "launch.jason" file, neste momento será criada a pasta ".vscode" que habilita para executar o debug da aplicação. Selecionar um projeto ".Net Core".
 
   - Revisão
 
-### Linguagem de Programação
+## Linguagem de Programação
 
   - Notas importantes
     - Nome de projeto sem utilização de espaços ou caracteres especiais.
@@ -609,13 +621,69 @@
     Console.WriteLine(nomeCompleto);
 
 ```
-
   - Métodos e funções: Prática
+    - Não se declara a assinatura do metodo dentro de outro método.
+    - Os parâmetros podem ser declarados como opcionais no método desde que na declaração já seja atribuido o seu valor.
+    - Parâmetro opcional deve sempre ser declarado ao final dos da lista de parâmetros.
+
+
+```
+
+    static void Main(string[] args)
+    {
+
+
+        MeuMetodo();
+
+	string nomeCompleto = RetornaNome("Danilo", "Calixto");
+	System.Console.WriteLine(nomeCompleto);
+
+    }
+
+    static void MeuMetodo()
+    {
+        System.Console.WriteLine("C# é Legal!!!");
+    }
+
+    static string RetornaNome(
+        string nome,
+        string sobrenome,
+        int idade = 46, //parâmetros opcionais
+        double altura = 1.85, //parâmetros opcionais
+        bool teste = true //parâmetros opcionais
+        )
+    {
+        return nome + " " + sobrenome + " " + idade.ToString();
+    }
+```
+
   - Value Types e Reference Types
+    - Definições:
+    - A memória é divida em duas partes, Heap e Stack.
+    - Stack armazena os dados.
+    - Heap armazena as referências para os dados.
+    - No .NET qualquer tipo será tratado como:
+    - Tipo de valor(Value Type)
+      - Quando a atribuição é feita por valor, é alocado um espaço de memória.
+      - É criado um dado novo.
+      - É feito uma cópia
+      - Ambas serão independentes.
+      - Built-in, Structs, Enums
+      - Garbage Collecto não acessa Stack.  
+    - Tipo de referência(Reference Type)
+      - Armazena o endereço.
+      - É armazenado na memória Heap.
+      - Quando é feito a atribuição, é feito uma cópia do endereço.
+      - Apontando para o mesmo endereço.
+      - E neste caso não são independentes.
+      - Classes, Objects, Arrays...
+      - Quando não mais utilizadas o Garbage Collector remove.
+
+
   - Value Types e Reference Types: Prática
-  - Structs
-  - Structs: Prática
-  - Enums
-  - Revisão
+    - Structs
+    - Structs: Prática
+    - Enums
+    - Revisão
 
 

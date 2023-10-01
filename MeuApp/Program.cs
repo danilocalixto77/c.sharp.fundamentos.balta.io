@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics.Contracts;
+using System.Globalization;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks.Dataflow;
 
@@ -194,7 +195,10 @@ namespace MeuApp
         static string RetornaNome(
             string nome,
             string sobrenome,
-            int idade = 0)
+            int idade = 46, //parâmetros opcionais
+            double altura = 1.85, //parâmetros opcionais
+            bool teste = true //parâmetros opcionais
+            )
         {
             return nome + " " + sobrenome + " " + idade.ToString();
         }
