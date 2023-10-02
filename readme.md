@@ -795,11 +795,39 @@ Curso: [Balta.io](https://balta.io/)
 
 ´´´
 
-
-
-
-
   - Enums
+    - Enumeradores são inteiros que dão uma melhor visualização do código.
+    - Substituem o uso de inteiros.
+    - Usado em listas curtas.
+    - Usados em dados fixos: Hard Coded.
+    - Convensão para nomenclatura iniciar com letra E.
+    - Definições:
+
+```
+  enum EEstadoCivil
+  {
+    Solteiro = 1,
+    Casado = 2,
+    Divorciado = 3
+  }
+
+  struct Cliente
+  {
+    public string nome;
+    public EEstadoCivil EstadoCivil; //O atributo foi definido com o tipo EEstadoCivil
+
+    //Com enumerador
+    var cliente = new Cliente("Jose da Silva", EEstadoCivil.Casado); 
+
+    Console.WriteLine(cliente.Nome);
+    Console.WriteLine(cliente.EstadoCivil); //--> Escreverá = Casado
+    //Para imprimir o número definido no enumerador, necessita de conversão explícita.
+    Console.WriteLine((int)cliente.EstadoCivil); //--> Escreverá = 2
+
+  }
+
+```
+
   - Revisão
 
 

@@ -201,15 +201,17 @@ namespace MeuApp
             arr1[0] = "Item 2";
             System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 2"
             System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 2"
+            
             */
 
-            Produto prod = new Produto(1, "Mouse", 5.35f);
-
+            //Uso das structs
+            Produto prod = new Produto(1, "Mouse", 5.35f, ETipoDeProduto.ProdutoVirtual);
             prod.Preco = 25.99f;
             System.Console.WriteLine(prod.Id);
             System.Console.WriteLine(prod.Nome);
             System.Console.WriteLine(prod.Preco);
-
+            System.Console.WriteLine(prod.TipoDeProduto);
+            System.Console.WriteLine((int)prod.TipoDeProduto);
 
         }
 
@@ -221,9 +223,11 @@ namespace MeuApp
         static string RetornaNome(
             string nome,
             string sobrenome,
+            ETipoDeProduto tipo,
             int idade = 46, //parâmetros opcionais
             double altura = 1.85, //parâmetros opcionais
             bool teste = true //parâmetros opcionais
+
             )
         {
             return nome + " " + sobrenome + " " + idade.ToString();
@@ -231,22 +235,31 @@ namespace MeuApp
 
         struct Produto
         {
-            public Produto(int id, string nome, double preco)
+            public Produto(int id, string nome, double preco, ETipoDeProduto tipoDeProduto)
             {
                 Id = id;
                 Nome = nome;
                 Preco = preco;
+                TipoDeProduto = tipoDeProduto;
             }
 
             public int Id;
             public string Nome;
             public double Preco;
+            public ETipoDeProduto TipoDeProduto;
 
             public double PrecoEmDolar(double dolar)
             {
                 return Preco * dolar;
             }
 
+        }
+
+        enum ETipoDeProduto
+        {
+            ProdutoFisico = 1,
+            ProdutoVirtual = 2,
+            ServicoPresencial = 3
         }
 
     }
