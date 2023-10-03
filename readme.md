@@ -831,14 +831,10 @@ Curso: [Balta.io](https://balta.io/)
 
 # Mão na massa: Criando uma calculadora
   - Iniciando o projeto
+    - Criando o projeto Calculadora
     ```
       dotnet new console -o Calculator
     ```  
-  > 
-
-
-
-
   - Soma
   - Utilizando funções
   - Subtração
