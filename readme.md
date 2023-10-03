@@ -458,7 +458,7 @@ Curso: [Balta.io](https://balta.io/)
     ```
 
   - Operador condicional: IF
-    > É o "SE"
+    > Em inglês significa o "SE".
     O IF também é composto pelo "ELSE IF" e o "ELSE".
   - Utilizando IF
     > Exemplos:
@@ -501,7 +501,7 @@ Curso: [Balta.io](https://balta.io/)
 
 ```
   - Estrutura condicional: Switch
-    - Em inglês significa chavear.
+    - Em inglês significa "chavear".
     - Execução em cascata.
     - A execução deve ser parada usando o comando "break".
     - E possui uma condição "default".
