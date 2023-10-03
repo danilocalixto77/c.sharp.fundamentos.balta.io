@@ -450,18 +450,18 @@ Curso: [Balta.io](https://balta.io/)
     ```
       int x = 12;
       bool andE = (x > 25) && (x < 40); //false
-      	System.Console.WriteLine($"O operador retornou: {andE}");
+        System.Console.WriteLine($"O operador retornou: {andE}");
       bool orOu = (x > 25) && (x < 40); //true
-	System.Console.WriteLine($"O operador retornou: {orOu}");
+        System.Console.WriteLine($"O operador retornou: {orOu}");
       bool negacao = !(x < 25); //false
-    	System.Console.WriteLine($"O operador retornou: {orOu}");
+        System.Console.WriteLine($"O operador retornou: {orOu}");
     ```
 
   - Operador condicional: IF
-    - É o "SE"
-    - o IF também é composto pelo "ELSE IF" e o "ELSE".
+    > É o "SE"
+    > O IF também é composto pelo "ELSE IF" e o "ELSE".
   - Utilizando IF
-    - Exemplos:
+    > Exemplos:
 ```
     int idade = 10;
     int maiorIdade = 21;
