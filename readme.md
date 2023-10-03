@@ -440,12 +440,11 @@ Curso: [Balta.io](https://balta.io/)
     - Sempre retorna verdadeiro ou falso (true or false)
     - Representação dos operadores:
 
-| Operador | Sinal |
-| -------- | ----- |
-| E / AND | && |
-| OU / OR | <code>&#124;&#124;</code> |
-| NEGAÇÃO | ! |
-
+    | Operador | Sinal |
+    | -------- | ----- |
+    | E / AND | && |
+    | OU / OR | <code>&#124;&#124;</code> |
+    | NEGAÇÃO | ! |
 
   - Exemplos:
 ```
@@ -831,6 +830,10 @@ Curso: [Balta.io](https://balta.io/)
 
 # Mão na massa: Criando uma calculadora
   - Iniciando o projeto
+    ```
+      dotnet new console -o Calculator
+    ```  
+  > 
 
 
 
