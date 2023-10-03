@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Projetos\\CSharp\\FundamentosCSharp\\MeuApp\\MeuApp.csproj": {}
+    "C:\\Projetos\\CSharp\\FundamentosCSharp\\Calculadora\\Calculadora.csproj": {}
   },
   "projects": {
-    "c:\\Projetos\\CSharp\\FundamentosCSharp\\MeuApp\\MeuApp.csproj": {
+    "C:\\Projetos\\CSharp\\FundamentosCSharp\\Calculadora\\Calculadora.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Projetos\\CSharp\\FundamentosCSharp\\MeuApp\\MeuApp.csproj",
-        "projectName": "MeuApp",
-        "projectPath": "c:\\Projetos\\CSharp\\FundamentosCSharp\\MeuApp\\MeuApp.csproj",
+        "projectUniqueName": "C:\\Projetos\\CSharp\\FundamentosCSharp\\Calculadora\\Calculadora.csproj",
+        "projectName": "Calculadora",
+        "projectPath": "C:\\Projetos\\CSharp\\FundamentosCSharp\\Calculadora\\Calculadora.csproj",
         "packagesPath": "C:\\Users\\Danilo\\.nuget\\packages\\",
-        "outputPath": "c:\\Projetos\\CSharp\\FundamentosCSharp\\MeuApp\\obj\\",
+        "outputPath": "C:\\Projetos\\CSharp\\FundamentosCSharp\\Calculadora\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

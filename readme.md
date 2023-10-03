@@ -827,15 +827,33 @@ Curso: [Balta.io](https://balta.io/)
   }
 
 ```
+  - Revisão
 
+# Mão na massa: Criando uma calculadora
+  - Iniciando o projeto
+
+
+
+
+  - Soma
+  - Utilizando funções
+  - Subtração
+  - Divisão
+  - Multiplicação
+  - Menu da aplicação
+  - Chamando as funções
+  - Saindo da aplicação
   - Revisão
 
 
-```
-    static void Main(string[] args)
-    {
 
 
-    }
 
-```
+
+
+
+
+
+
+
+
