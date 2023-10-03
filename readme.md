@@ -458,8 +458,8 @@ Curso: [Balta.io](https://balta.io/)
     ```
 
   - Operador condicional: IF
-    >Em inglês significa o "SE".
-    O IF também é composto pelo "ELSE IF" e o "ELSE".
+    >Em inglês significa o **SE**.
+    O IF também é composto pelo **ELSE IF** e o **ELSE**.
 
   - Utilizando IF
     > Exemplos:
