@@ -863,6 +863,17 @@ Curso: [Balta.io](https://balta.io/)
   - Criando o menu
   - Opções do menu
   - Substring
+    ```
+    string teste =  'Danilo';
+    string resultado = '';
+    ... 
+    resultado = Substring(teste.Length-1, 1));
+    resultado = 'o'
+    ...
+    resultado = Substring(0,teste.Length-1));
+    resultado = 'D'
+    ```
+
   - Obtendo a opção
   - Calculando o tempo
   - Finalizando a aplicação
