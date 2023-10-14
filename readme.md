@@ -886,6 +886,12 @@ Curso: [Balta.io](https://balta.io/)
   - Iteração e caractere de escape
   - Do/While na prática
   - StreamWriter
+    ```
+    using System.IO; //Biblioteca que contém o StremWriter
+    ...
+    //using () para chamada de um arquivo faz a abertura/fechamento.
+
+    ```
   - Salvando o arquivo
   - Abrindo arquivos
   - Revisão
