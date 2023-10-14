@@ -898,6 +898,18 @@ Curso: [Balta.io](https://balta.io/)
 
 ## Strings
 
+  - Guids
+  - Interpolação de strings
+  - Comparação de strings
+  - StartsWith/EndsWith
+  - Equals
+  - Índices
+  - Métodos adicionais
+  - Manipulando strings
+  - StringBuilder
+  - Revisão
+
+## Mão na massa: Editor HTML
 
 
 
