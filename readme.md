@@ -829,7 +829,7 @@ Curso: [Balta.io](https://balta.io/)
 ```
   - Revisão
 
-# Mão na massa: Criando uma calculadora
+## Mão na massa: Criando uma calculadora
   - Iniciando o projeto
     - Criando o projeto Calculadora
     ```
@@ -845,7 +845,7 @@ Curso: [Balta.io](https://balta.io/)
   - Saindo da aplicação
   - Revisão
 
-# Mão na massa: Cronômetro
+## Mão na massa: Cronômetro
 
   - Iniciando o projeto
     ```
@@ -859,8 +859,7 @@ Curso: [Balta.io](https://balta.io/)
     Thread.Sleep(1000); //Equivale a 1s
 
     ```
- 
-  - Criando o menu
+   - Criando o menu
   - Opções do menu
   - Substring
     ```
@@ -873,14 +872,25 @@ Curso: [Balta.io](https://balta.io/)
     resultado = Substring(0,teste.Length-1));
     resultado = 'D'
     ```
-
   - Obtendo a opção
   - Calculando o tempo
   - Finalizando a aplicação
   - Revisão
 
+## Mão na massa: Editor de Textos
 
+  - Iniciando o projeto
+    ```
+    dotnet new console -o TextEditor
+    ```
+  - Iteração e caractere de escape
+  - Do/While na prática
+  - StreamWriter
+  - Salvando o arquivo
+  - Abrindo arquivos
+  - Revisão
 
+## Strings
 
 
 
