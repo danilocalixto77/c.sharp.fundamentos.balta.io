@@ -845,6 +845,29 @@ Curso: [Balta.io](https://balta.io/)
   - Saindo da aplicação
   - Revisão
 
+# Mão na massa: Cronômetro
+
+  - Iniciando o projeto
+    ```
+      dotnet new console -o Stopwatch
+    ```  
+  - Estrutura do cronômetro
+  - Thread e Sleep
+    ```
+    using System.Threading;
+    ...
+    Thread.Sleep(1000); //Equivale a 1s
+
+    ```
+ 
+  - Criando o menu
+  - Opções do menu
+  - Substring
+  - Obtendo a opção
+  - Calculando o tempo
+  - Finalizando a aplicação
+  - Revisão
+
 
 
 
