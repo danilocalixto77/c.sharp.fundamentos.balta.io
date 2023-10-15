@@ -111,6 +111,8 @@ Curso: [Balta.io](https://balta.io/)
     > Paramentros
       - -o para definir o local do projeto
 
+#FORMATADO ATÉ AQUI (15/10/2023)
+
   - Fluxo de execução
     > Para checar se você está em um projeto C# verifice que na pasta há um arquivo com extenção ".csproj"
     Ao iniciar um projeto executar dentro da pasta do projeto o comando : "dotnet restore" , para que o dotnet faça uma atualização dos arquivos, baixando todas as dependências e pacotes adicionais ao dotnet que esta aplicação precisa.
