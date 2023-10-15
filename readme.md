@@ -69,44 +69,47 @@ Curso: [Balta.io](https://balta.io/)
 
   - dotnet cli
     > CLI Command Line Interface
-    Comandos via CLI dotnet.
-```
+    
+    > Comandos via CLI dotnet.
+    ```
     dotnet --list-sdks
     dotnet --list-runtimes
     dotnet -h | --help
     dotnet --info
-```` 
+    ```` 
 
   - VS Code
     > Baixar Visual Studio Code
-    Instalar extensões
-    Necessárias:
-    C# id : ms-dotnettools.csharp
-    Sugeridas:
-    One Dark Pro -> vscode-icons id: vscode-icons-team.vscode-icons
-    Comandos de atalhos do VSCode:
-    "Ctrl + ," = Abre setting, que pode ser editado por json também.
+    
+    > Instalar extensões
 
+    > Necessárias:
+      - C# id : ms-dotnettools.csharp
+    > Sugeridas:
+      - One Dark Pro -> vscode-icons id: vscode-icons-team.vscode-icons
+
+    > Comandos de atalhos do VSCode: 
+   
   - Tipos de projeto
     > Web, API, ML, DLL...
-    Pra cada projeto deve ser previamente definido para obter o resultado desejado.
-    Tipo : Class Library - Gera uma DLL.
-    Tipo : Console Application
-    Tipo : Web
-    Tipo : Tests
-    Comando para criação de projetos:
+    
+    > Pra cada projeto deve ser previamente definido para obter o resultado desejado.
+      - Tipo : Class Library - Gera uma DLL.
+      - Tipo : Console Application
+      - Tipo : Web
+      - Tipo : Tests
 
-      ```    
-        dotnet new console 	=> Novo Console Application
-        dotnet new classlib => Novo Class Library
-        dotnet new web 		=> Novo projeto ASP.NET Core
-        dotnet new mvc 		=> Novo projeto ASP.NET Core
-        dotnet new webapi 	=> Novo Projeto ASP.NET Core
-        dotnet new mstest 	=> Novo projeto Microsoft Teste
-      ```
-
+    > Comando para criação de projetos:
+    ```    
+    dotnet new console 	=> Novo Console Application
+    dotnet new classlib => Novo Class Library
+    dotnet new web 		=> Novo projeto ASP.NET Core
+    dotnet new mvc 		=> Novo projeto ASP.NET Core
+    dotnet new webapi 	=> Novo Projeto ASP.NET Core
+    dotnet new mstest 	=> Novo projeto Microsoft Teste
+    ```
     > Paramentros
-      -o para definir o local do projeto
+      - -o para definir o local do projeto
 
   - Fluxo de execução
     > Para checar se você está em um projeto C# verifice que na pasta há um arquivo com extenção ".csproj"
