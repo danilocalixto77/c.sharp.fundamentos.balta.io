@@ -204,7 +204,9 @@ namespace MeuApp
             
             */
 
+
             //Uso das structs
+            /*
             Produto prod = new Produto(1, "Mouse", 5.35f, ETipoDeProduto.ProdutoVirtual);
             prod.Preco = 25.99f;
             System.Console.WriteLine(prod.Id);
@@ -212,6 +214,9 @@ namespace MeuApp
             System.Console.WriteLine(prod.Preco);
             System.Console.WriteLine(prod.TipoDeProduto);
             System.Console.WriteLine((int)prod.TipoDeProduto);
+            */
+
+            Aula0901();
 
         }
 
@@ -262,11 +267,34 @@ namespace MeuApp
             ServicoPresencial = 3
         }
 
+        //Aula: Modulo 09 : Strings | Aula 01 : Guids
+        static void Aula0901()
+        {
+            //Gera novo id
+            var id = Guid.NewGuid();
+            id.ToString();
+            //Ao converter para um tipo String pode-se trabalhar com o Guid de várias formas
+            Console.WriteLine(id);
+
+            //Gera id zerado - ERRO COMUM
+            id = new Guid();
+            Console.WriteLine(id);
+
+            //Informando Guid vazio. Irá ocorrer uma Exception.
+            //id = new Guid(""); 
+            //Informando Guid válido
+            id = new Guid("432a5b7c-60ba-49af-98bb-75326592f854");
+
+            //Retorna o Guid atribuido a id
+            Console.WriteLine(id);
+        }
+
 
 
     }
 
 
 }
+
 
 

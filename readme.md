@@ -899,10 +899,30 @@ Curso: [Balta.io](https://balta.io/)
 ## Strings
 
   - Guids
-    > GUID : Global Unique Identifier. É um Id/Hash gerado pelo C#.
+    > GUID : Global Unique Identifier. É um Id/Hash gerado pelo C#. Normalmente
 
     > Pertence ao: System
+    
+    >Declaração de um GUID.
+```
+//Gera novo id
+var id = Guid.NewGuid();
+id.ToString();
+//Ao converter para um tipo String pode-se trabalhar com o Guid de várias formas
+Console.WriteLine(id);
 
+//Gera id zerado - ERRO COMUM
+id = new Guid();
+Console.WriteLine(id);
+
+//Informando Guid vazio. Irá ocorrer uma Exception.
+//id = new Guid(""); 
+//Informando Guid válido
+id = new Guid("432a5b7c-60ba-49af-98bb-75326592f854");
+
+//Retorna o Guid atribuido a id
+Console.WriteLine(id);
+```
 
   - Interpolação de strings
   - Comparação de strings
