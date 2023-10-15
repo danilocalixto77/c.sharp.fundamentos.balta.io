@@ -899,6 +899,11 @@ Curso: [Balta.io](https://balta.io/)
 ## Strings
 
   - Guids
+    > GUID : Global Unique Identifier. É um Id/Hash gerado pelo C#.
+
+    > Pertence ao: System
+
+
   - Interpolação de strings
   - Comparação de strings
   - StartsWith/EndsWith
