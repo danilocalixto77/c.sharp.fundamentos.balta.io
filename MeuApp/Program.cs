@@ -216,7 +216,8 @@ namespace MeuApp
             System.Console.WriteLine((int)prod.TipoDeProduto);
             */
 
-            Aula0901();
+            //Aula0901();
+            Aula0902();
 
         }
 
@@ -289,7 +290,25 @@ namespace MeuApp
             Console.WriteLine(id);
         }
 
-
+        //Aula: Modulo 09 : Strings | Aula 02 : Interpolação de strings
+        static void Aula0902()
+        {
+            //1º Forma simples, concatenando variáveis
+            var preco = 10.2;
+            var texto = "O Preço do Produto é " + preco + " Reais.";
+            Console.WriteLine(texto);
+            //2º Forma com Format que formata uma cadeia de caracteres.
+            texto = string.Format("O preço do produto é {0} Reais. {1}", preco, true);
+            Console.WriteLine(texto);
+            //3º Forma com cifrão $
+            texto = $"O preço do produto é {preco} reais";
+            Console.WriteLine(texto);
+            //Dica: Uso do @. I irá quebrar a linha ou o C# ignora comandos como \n.
+            texto = $@"O preço do produto é {preco} reais,
+                      somente para compras em promoção, 
+                      com uso do Arroba.";
+            Console.WriteLine(texto);
+        }
 
     }
 
