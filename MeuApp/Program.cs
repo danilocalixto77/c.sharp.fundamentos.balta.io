@@ -217,7 +217,8 @@ namespace MeuApp
             */
 
             //Aula0901();
-            Aula0902();
+            //Aula0902();
+            Aula0903();
 
         }
 
@@ -308,6 +309,20 @@ namespace MeuApp
                       somente para compras em promoção, 
                       com uso do Arroba.";
             Console.WriteLine(texto);
+        }
+
+        //Aula: Modulo 09 : Strings | Aula 03 : Comparação de strings
+        static void Aula0903()
+        {
+            var texto = "Testando";
+            //Metodo CompareTo retorna 0 ou 1.
+            Console.WriteLine($"Variável= {texto}" + " Digitado= Testando " + texto.CompareTo("Testando")); //0 Achou
+            Console.WriteLine($"Variável= {texto}" + " Digitado= testando " + texto.CompareTo("testando")); //1 Não Achou
+
+            //Metodo Contains retorna True ou False
+            texto = "Este texto é um teste do método Contains.";
+            Console.WriteLine(texto.Contains("teste")); //True Case sensitive
+            Console.WriteLine(texto.Contains("TESTE", StringComparison.OrdinalIgnoreCase)); //True Para ignorar Case sensitive
         }
 
     }
