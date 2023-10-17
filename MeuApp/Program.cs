@@ -11,74 +11,8 @@ namespace MeuApp
     {
         static void Main(string[] args)
         {
-            /*
-            var texto = "Testando";
-            Console.WriteLine(texto);
-
-            int? idade = 46;
-            Console.WriteLine(idade);
-            idade = null;
-            Console.WriteLine(idade);
-            idade = 0;
-            Console.WriteLine(idade);
-            
-            int inteiro = 100;
-            uint interiSemSinal = (uint)inteiro; //Conversão explícita.
-            Console.WriteLine(inteiro);
-
-            int outroInteiro = int.Parse("1000"); //Parse
-            Console.WriteLine(outroInteiro);
-
-            int inteiro = 100;
-            float real = 25.8f;
-            //inteiro = real; //Erro não é possivel.
-            //real = inteiro; //Permitido
-            //inteiro = (int)real; //Conversão explicita
-            //inteiro = int.Parse(inteiro); // Erro não é possivel pois o Parse espera uma string
-            //string valorReal = real.ToString(); //Convertendo o real para string para  o Parse abaixo
-            //inteiro = int.Parse(valorReal); //Parse funcionou pois recebeu uma string.
-            inteiro = int.Parse("255");
-            inteiro = Convert.ToInt32(real);
-            Console.WriteLine(inteiro);
-            //Console.WriteLine(valorReal);
-            Console.WriteLine(real);
-
-            */
-
-            /*  
-            //Operadores aritmeticos
-                      
-            int x = 2;
-            x = 75 / 23 + (2 * 3); //Alterando o operador obtem-se valores conforme operador. + - * /
-            Console.WriteLine(x);
-
-            // Operadores de atribuição
-            int y = 2;
-            y += 5; //Alterando o operador obtem-se valores conforme o operador. + - * /
-            y++; // Também pode utilizar ++ ou -- para auto incremento/decremento em loops.
-            Console.WriteLine(y);
-            
-            // Operadores de comparação
-            int x = 20;
-            Console.WriteLine(x == 10); // False
-            Console.WriteLine(x != 10); // True
-            Console.WriteLine(x >= 10); // True
-            Console.WriteLine(x <= 10); // False
-            Console.WriteLine(x > 10); // True
-            Console.WriteLine(x < 10); // False            
-            
-            */
 
             /*
-            //Operadores lógicos
-            int x = 12;
-            bool andE = (x > 25) && (x < 40); //false
-            System.Console.WriteLine($"O operador retornou: {andE}");
-            bool orOu = (x > 25) && (x < 40); //true
-            System.Console.WriteLine($"O operador retornou: {orOu}");
-            bool negacao = !(x < 25); //false
-            System.Console.WriteLine($"O operador retornou: {orOu}");
-
             //Utilizando IF
             int idade = 10;
             int maiorIdade = 21;
@@ -216,9 +150,14 @@ namespace MeuApp
             System.Console.WriteLine((int)prod.TipoDeProduto);
             */
 
-            //Aula0901();
-            //Aula0902();
-            Aula0903();
+            //ModuloAula0505();
+            //ModuloAula0506();
+            //ModuloAula0526();
+            //ModuloAula0530();
+            ModuloAula0531();
+            //ModuloAula0901();
+            //ModuloAula0902();
+            //ModuloAula0903();
 
         }
 
@@ -269,8 +208,98 @@ namespace MeuApp
             ServicoPresencial = 3
         }
 
-        //Aula: Modulo 09 : Strings | Aula 01 : Guids
-        static void Aula0901()
+
+        //Módulo05: Linguagem de Programação com C# | Aula05: Variáveis
+        static void ModuloAula0505()
+        {
+            var texto = "Testando";
+            Console.WriteLine(texto);
+            int? idade = 46;
+            Console.WriteLine(idade);
+            idade = null;
+            Console.WriteLine(idade);
+            idade = 0;
+            Console.WriteLine(idade);
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula06: Constantes
+        static void ModuloAula0506()
+        {
+            //const int IDADE_MINIMA; //Inicia com zero
+            const int IDADE_MINIMA = 18;
+            Console.WriteLine(IDADE_MINIMA);
+
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula26: Convertendo tipos
+        static void ModuloAula0526()
+        {
+            int inteiro = 100;
+            uint interiSemSinal = (uint)inteiro; //Conversão explícita.
+            Console.WriteLine(inteiro);
+
+            int outroInteiro = int.Parse("1000"); //Parse
+            Console.WriteLine(outroInteiro);
+            inteiro = 100;
+            float real = 25.8f;
+
+            //inteiro = real; //Erro não é possivel.
+
+            real = inteiro; //Permitido
+            inteiro = (int)real; //Conversão explicita
+
+            //inteiro = int.Parse(inteiro); // Erro não é possivel pois o Parse espera uma string
+            string valorReal = real.ToString(); //Convertendo Real para string 
+
+            //inteiro = int.Parse(valorReal); //Parse funcionou pois recebeu uma string.
+
+            inteiro = int.Parse("255");
+            inteiro = Convert.ToInt32(real);
+            Console.WriteLine(inteiro);
+            Console.WriteLine(valorReal);
+            Console.WriteLine(real);
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula30: utilizando operadores
+        static void ModuloAula0530()
+        {
+            //Aritméticos
+            int x = 2;
+            x = 75 / 23 + (2 * 3);
+            //Alterando o operador obtem-se valores conforme operador. + - * /
+            Console.WriteLine(x);
+
+            //Atribuição
+            int y = 2;
+            y += 5; //Alterando o operador obtem-se valores conforme o operador. + - * /
+            y++; // Também pode utilizar ++ ou -- para auto incremento/decremento em loops.
+            Console.WriteLine(y);
+
+            //Comparação
+            x = 20;
+            Console.WriteLine(x == 10); // False
+            Console.WriteLine(x != 10); // True
+            Console.WriteLine(x >= 10); // True
+            Console.WriteLine(x <= 10); // False
+            Console.WriteLine(x > 10); // True
+            Console.WriteLine(x < 10); // False
+
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula31: Operadores lógicos
+        static void ModuloAula0531()
+        {
+            int x = 12;
+            bool andE = (x > 25) && (x < 40); //false
+            System.Console.WriteLine($"O operador retornou: {andE}");
+            bool orOu = (x > 25) && (x < 40); //true
+            System.Console.WriteLine($"O operador retornou: {orOu}");
+            bool negacao = !(x < 25); //false
+            System.Console.WriteLine($"O operador retornou: {orOu}");
+        }
+
+        //Módulo09: Strings | Aula01: Guids
+        static void ModuloAula0901()
         {
             //Gera novo id
             var id = Guid.NewGuid();
@@ -291,8 +320,8 @@ namespace MeuApp
             Console.WriteLine(id);
         }
 
-        //Aula: Modulo 09 : Strings | Aula 02 : Interpolação de strings
-        static void Aula0902()
+        //Módulo09: Strings | Aula02: Interpolação de strings
+        static void ModuloAula0902()
         {
             //1º Forma simples, concatenando variáveis
             var preco = 10.2;
@@ -311,8 +340,8 @@ namespace MeuApp
             Console.WriteLine(texto);
         }
 
-        //Aula: Modulo 09 : Strings | Aula 03 : Comparação de strings
-        static void Aula0903()
+        //Módulo09: Strings | Aula03: Comparação de strings
+        static void ModuloAula0903()
         {
             var texto = "Testando";
             //Metodo CompareTo retorna 0 ou 1.
