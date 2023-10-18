@@ -978,6 +978,23 @@ Curso: [Balta.io](https://balta.io/)
     ```
 
   - Equals
+    ```
+    Console.WriteLine("Módulo09: Strings | Aula05: Equal");
+    var texto = "Este texto é um teste";
+    var idade = 46;
+    var nome = "Danilo";
+    //Comparando valores da variável
+    Console.WriteLine(texto.Equals("Este texto é um teste"));
+    Console.WriteLine(texto.Equals("este texto é um teste"));
+    Console.WriteLine(texto.Equals("ESTE TEXTO É UM TESTE"));
+    Console.WriteLine(texto.ToUpper().Equals("ESTE TEXTO É UM TESTE"));
+    Console.WriteLine(texto.Equals("este texto é um teste",     StringComparison.OrdinalIgnoreCase));
+    //Comparando tipos de objetos/variáveis
+    Console.WriteLine"-------------------------------------------");
+    Console.WriteLine(texto.Equals(idade));
+    Console.WriteLine(texto.Equals(nome));
+    ```
+
   - Índices
   - Métodos adicionais
   - Manipulando strings
