@@ -12,131 +12,31 @@ namespace MeuApp
         static void Main(string[] args)
         {
 
+
             /*
-            //Utilizando IF
-            int idade = 10;
-            int maiorIdade = 21;
-            int idadeMaxima = 60;
-            if (idade < maiorIdade)
-            {
-                System.Console.WriteLine("Menor de idade!");
-            }
-            else if (idade > idadeMaxima)
-            {
-                System.Console.WriteLine("Idoso!");
-            }
-            else if (idade <= idadeMaxima)
-            {
-                System.Console.WriteLine("Jovem!");
-            }
-            else
-            {
-                System.Console.WriteLine("Maior de idade!");
-            }
-            System.Console.WriteLine("Finalizou!");
 
 
-            if (idade < maiorIdade)
-            {
-                return;
-            }
-            else
-            {
-                System.Console.WriteLine("1");
-                System.Console.WriteLine("2");
-                System.Console.WriteLine("3");
-                System.Console.WriteLine("4");
-                System.Console.WriteLine("5");
-                System.Console.WriteLine("6");
-            }
-            
-            //Utilizando o Swithc
-            string valor = "maria";
-            switch (valor)
-            {
-                case "joao": System.Console.WriteLine("Não é o cara."); break;
-                case "danilo": System.Console.WriteLine("Esse é o cara."); break;
-                case "maria": System.Console.WriteLine("Ou será que é essa?"); break;
-                default: System.Console.WriteLine("Não encontrei essa pessoa!"); break;
-            }
-
-            bool? valor2 = true;
-            switch (valor2)
-            {
-                case true: System.Console.WriteLine("É Verdadeiro"); break;
-                case false: System.Console.WriteLine("É Falso"); break;
-                default: System.Console.WriteLine("Não encontrei"); break;
-            }
-
-            //Utilizando o for
-            for (var i = 0; i <= 5; i++)
-                System.Console.WriteLine($"Contando de 0 a 5: {i}");
-
-            for (var j = 5; j >= 0; j--)
-                System.Console.WriteLine($"Contagem regressiva de 5 a 0: {j}");
-
-            for (int k = 1; k <= 5; k++)
-            {
-                System.Console.WriteLine($"Contando de 1 a 5: {k}");
-            }
-
-          
-            //Utilizando o while
-            int valor = 0;
-
-            while (valor <= 5)
-            {
-                System.Console.WriteLine(valor);
-                valor++;
-            }
-
-            valor = 0;
-            while (valor <= 5)
-            {
-                valor++;
-                System.Console.WriteLine(valor);
-            }
-
-            //loop infitino
-            while (true)
-            {
-                System.Console.WriteLine(valor);
-                valor++;
-            }
 
 
-            //Utilizando do/while
-            int valor = 0;
-            do
-            {
-                System.Console.WriteLine(valor);
-                valor++;
-            } while (valor <= 5);
+                        //Value Type
+                        int x = 25;
+                        int y = x; //É feito uma cópia 
+                        System.Console.WriteLine(x); //x = 25
+                        System.Console.WriteLine(y); //y = 25
+                        x = 32;
+                        System.Console.WriteLine(x); //x = 32
+                        System.Console.WriteLine(y); //y = 25
+                        //Reference Type
+                        var arr1 = new string[2];
+                        arr1[0] = "Item 1";
+                        var arr2 = arr1;
+                        System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 1"
+                        System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 1"
+                        arr1[0] = "Item 2";
+                        System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 2"
+                        System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 2"
 
-            //Utilizando Métodos
-            MeuMetodo();
-            string nomeCompleto = RetornaNome("Danilo", "Calixto");
-            System.Console.WriteLine(nomeCompleto);
-
-            //Value Type
-            int x = 25;
-            int y = x; //É feito uma cópia 
-            System.Console.WriteLine(x); //x = 25
-            System.Console.WriteLine(y); //y = 25
-            x = 32;
-            System.Console.WriteLine(x); //x = 32
-            System.Console.WriteLine(y); //y = 25
-            //Reference Type
-            var arr1 = new string[2];
-            arr1[0] = "Item 1";
-            var arr2 = arr1;
-            System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 1"
-            System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 1"
-            arr1[0] = "Item 2";
-            System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 2"
-            System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 2"
-            
-            */
+                        */
 
 
             //Uso das structs
@@ -155,30 +55,25 @@ namespace MeuApp
             //ModuloAula0526();
             //ModuloAula0530();
             //ModuloAula0531();
+            //ModuloAula0533();
+            //ModuloAula0534();
+            //ModuloAula0535();
+            //ModuloAula0536();
+            //ModuloAula0537();
+
+            //ModuloAula0539 - Metodos
+            //MeuMetodo();
+            var retorno = "";
+            retorno = RetornaNome("Danilo Holanda Calixto", "Calixto", ETipoDeProduto.ProdutoVirtual);
+            Console.WriteLine(retorno);
+
+
             //ModuloAula0901();
             //ModuloAula0902();
             //ModuloAula0903();
             //ModuloAula0904();
             //ModuloAula0905();
 
-        }
-
-        static void MeuMetodo()
-        {
-            System.Console.WriteLine("C# é Legal!!!");
-        }
-
-        static string RetornaNome(
-            string nome,
-            string sobrenome,
-            ETipoDeProduto tipo,
-            int idade = 46, //parâmetros opcionais
-            double altura = 1.85, //parâmetros opcionais
-            bool teste = true //parâmetros opcionais
-
-            )
-        {
-            return nome + " " + sobrenome + " " + idade.ToString();
         }
 
         struct Produto
@@ -299,6 +194,143 @@ namespace MeuApp
             bool negacao = !(x < 25); //false
             System.Console.WriteLine($"O operador retornou: {orOu}");
         }
+
+        //Módulo05: Linguagem de Programação com C# | Aula33: Utilizando IF
+        static void ModuloAula0533()
+        {
+            Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula33: Utilizando IF");
+            int idade = 10;
+            int maiorIdade = 21;
+            int idadeMaxima = 60;
+            if (idade < maiorIdade)
+            {
+                System.Console.WriteLine("Menor de idade!");
+            }
+            else if (idade > idadeMaxima)
+            {
+                System.Console.WriteLine("Idoso!");
+            }
+            else if (idade <= idadeMaxima)
+            {
+                System.Console.WriteLine("Jovem!");
+            }
+            else
+            {
+                System.Console.WriteLine("Maior de idade!");
+            }
+            System.Console.WriteLine("Finalizou!");
+
+            if (idade < maiorIdade)
+            {
+                return;
+            }
+            else
+            {
+                System.Console.WriteLine("1");
+                System.Console.WriteLine("2");
+                System.Console.WriteLine("3");
+                System.Console.WriteLine("4");
+                System.Console.WriteLine("5");
+                System.Console.WriteLine("6");
+            }
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula34: Estrutura condicional: Switch
+        static void ModuloAula0534()
+        {
+            Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula34: Estrutura condicional: Switch");
+            string valor = "maria";
+            switch (valor)
+            {
+                case "joao": System.Console.WriteLine("Não é o cara."); break;
+                case "danilo": System.Console.WriteLine("Esse é o cara."); break;
+                case "maria": System.Console.WriteLine("Ou será que é essa?"); break;
+                default: System.Console.WriteLine("Não encontrei essa pessoa!"); break;
+            }
+            bool? valor2 = true;
+            switch (valor2)
+            {
+                case true: System.Console.WriteLine("É Verdadeiro"); break;
+                case false: System.Console.WriteLine("É Falso"); break;
+                default: System.Console.WriteLine("Não encontrei"); break;
+            }
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula35: Laços de repetição: For
+        static void ModuloAula0535()
+        {
+            Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula35: Laços de repetição: For");
+
+            for (var i = 0; i <= 5; i++)
+                System.Console.WriteLine($"Contando de 0 a 5: {i}");
+
+            for (var j = 5; j >= 0; j--)
+                System.Console.WriteLine($"Contagem regressiva de 5 a 0: {j}");
+
+            for (int k = 1; k <= 5; k++)
+            {
+                System.Console.WriteLine($"Contando de 1 a 5: {k}");
+            }
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula36: Laços de repetição: While
+        static void ModuloAula0536()
+        {
+            Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula36: Laços de repetição: While");
+            int valor = 0;
+            while (valor <= 5)
+            {
+                System.Console.WriteLine(valor);
+                valor++;
+            }
+            valor = 0;
+            while (valor <= 5)
+            {
+                valor++;
+                System.Console.WriteLine(valor);
+            }
+            //loop infitino
+            while (true)
+            {
+                System.Console.WriteLine(valor);
+                valor++;
+                if (valor == 15)
+                    break;
+            }
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula37: Laços de repetição: Do/While
+        static void ModuloAula0537()
+        {
+            Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula37: Laços de repetição: Do/While");
+            int valor = 0;
+            do
+            {
+                System.Console.WriteLine(valor);
+                valor++;
+            } while (valor <= 5);
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula39: Métodos e funções:Prática
+        static void MeuMetodo()
+        {
+            Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula39: Métodos e funções:Prática");
+            System.Console.WriteLine("C# é Legal!!!");
+        }
+        //Módulo05: Linguagem de Programação com C# | Aula39: Métodos e funções:Prática
+        static string RetornaNome(
+            string nome,
+            string sobrenome,
+            ETipoDeProduto tipo,
+            int idade = 46, //parâmetros opcionais
+            double altura = 1.85, //parâmetros opcionais
+            bool teste = true //parâmetros opcionais
+            )
+        {
+            Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula39: Métodos e funções:Prática");
+            return nome + " " + sobrenome + " " + idade.ToString();
+        }
+
 
         //Módulo09: Strings | Aula01: Guids
         static void ModuloAula0901()
