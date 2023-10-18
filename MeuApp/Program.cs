@@ -154,10 +154,12 @@ namespace MeuApp
             //ModuloAula0506();
             //ModuloAula0526();
             //ModuloAula0530();
-            ModuloAula0531();
+            //ModuloAula0531();
             //ModuloAula0901();
             //ModuloAula0902();
             //ModuloAula0903();
+            //ModuloAula0904();
+            //ModuloAula0905();
 
         }
 
@@ -354,6 +356,40 @@ namespace MeuApp
             Console.WriteLine(texto.Contains("TESTE", StringComparison.OrdinalIgnoreCase)); //True Para ignorar Case sensitive
         }
 
+        //Módulo09: Strings | Aula04: StarsWith/EndsWith
+        static void ModuloAula0904()
+        {
+            var texto = "Este texto é um teste";
+            Console.WriteLine(texto.StartsWith("Este"));
+            Console.WriteLine(texto.StartsWith("este"));
+            Console.WriteLine(texto.StartsWith("este", StringComparison.OrdinalIgnoreCase));
+            Console.WriteLine(texto.StartsWith("texto"));
+
+            Console.WriteLine(texto.EndsWith("teste"));
+            Console.WriteLine(texto.EndsWith("Teste"));
+            Console.WriteLine(texto.EndsWith("Teste", StringComparison.OrdinalIgnoreCase));
+            Console.WriteLine(texto.EndsWith("TESTE"));
+        }
+
+        //Módulo09: Strings | Aula05: Equal
+        static void ModuloAula0905()
+        {
+            Console.WriteLine("Módulo09: Strings | Aula05: Equal");
+            var texto = "Este texto é um teste";
+            var idade = 46;
+            var nome = "Danilo";
+            //Comparando valores da variável
+            Console.WriteLine(texto.Equals("Este texto é um teste"));
+            Console.WriteLine(texto.Equals("este texto é um teste"));
+            Console.WriteLine(texto.Equals("ESTE TEXTO É UM TESTE"));
+            Console.WriteLine(texto.ToUpper().Equals("ESTE TEXTO É UM TESTE"));
+            Console.WriteLine(texto.Equals("este texto é um teste", StringComparison.OrdinalIgnoreCase));
+            //Comparando tipos de objetos/variáveis
+            Console.WriteLine("-------------------------------------------");
+            Console.WriteLine(texto.Equals(idade));
+            Console.WriteLine(texto.Equals(nome));
+
+        }
     }
 
 

@@ -952,7 +952,31 @@ Curso: [Balta.io](https://balta.io/)
     ```
 
   - Comparação de strings
+    ```
+    var texto = "Testando";
+    //Metodo CompareTo retorna 0 ou 1.
+    Console.WriteLine($"Variável= {texto}" + " Digitado= Testando " +     texto.CompareTo("Testando")); //0 Achou
+    Console.WriteLine($"Variável= {texto}" + " Digitado= testando " +     texto.CompareTo("testando")); //1 Não Achou
+
+    //Metodo Contains retorna True ou False
+    texto = "Este texto é um teste do método Contains.";
+    Console.WriteLine(texto.Contains("teste")); //True Case sensitive
+    Console.WriteLine(texto.Contains("TESTE",     StringComparison.OrdinalIgnoreCase)); //True Para ignorar Case sensitive
+    ```
   - StartsWith/EndsWith
+    ```
+    var texto = "Este texto é um teste";
+    Console.WriteLine(texto.StartsWith("Este"));
+    Console.WriteLine(texto.StartsWith("este"));
+    Console.WriteLine(texto.StartsWith("este", StringComparison.OrdinalIgnoreCase));
+    Console.WriteLine(texto.StartsWith("texto"));
+
+    Console.WriteLine(texto.EndsWith("teste"));
+    Console.WriteLine(texto.EndsWith("Teste"));
+    Console.WriteLine(texto.EndsWith("Teste", StringComparison.OrdinalIgnoreCase));
+    Console.WriteLine(texto.EndsWith("TESTE"));
+    ```
+
   - Equals
   - Índices
   - Métodos adicionais
