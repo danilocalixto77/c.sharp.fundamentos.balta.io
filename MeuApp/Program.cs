@@ -12,44 +12,6 @@ namespace MeuApp
         static void Main(string[] args)
         {
 
-
-            /*
-
-
-
-
-                        //Value Type
-                        int x = 25;
-                        int y = x; //É feito uma cópia 
-                        System.Console.WriteLine(x); //x = 25
-                        System.Console.WriteLine(y); //y = 25
-                        x = 32;
-                        System.Console.WriteLine(x); //x = 32
-                        System.Console.WriteLine(y); //y = 25
-                        //Reference Type
-                        var arr1 = new string[2];
-                        arr1[0] = "Item 1";
-                        var arr2 = arr1;
-                        System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 1"
-                        System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 1"
-                        arr1[0] = "Item 2";
-                        System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 2"
-                        System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 2"
-
-                        */
-
-
-            //Uso das structs
-            /*
-            Produto prod = new Produto(1, "Mouse", 5.35f, ETipoDeProduto.ProdutoVirtual);
-            prod.Preco = 25.99f;
-            System.Console.WriteLine(prod.Id);
-            System.Console.WriteLine(prod.Nome);
-            System.Console.WriteLine(prod.Preco);
-            System.Console.WriteLine(prod.TipoDeProduto);
-            System.Console.WriteLine((int)prod.TipoDeProduto);
-            */
-
             //ModuloAula0505();
             //ModuloAula0506();
             //ModuloAula0526();
@@ -62,49 +24,32 @@ namespace MeuApp
             //ModuloAula0537();
 
             //ModuloAula0539 - Metodos
-            //MeuMetodo();
-            var retorno = "";
-            retorno = RetornaNome("Danilo Holanda Calixto", "Calixto", ETipoDeProduto.ProdutoVirtual);
-            Console.WriteLine(retorno);
+            {
+                MeuMetodo();
+                var retorno = "";
+                retorno = RetornaNome("Danilo Holanda Calixto", "Calixto", ETipoDeProduto.ProdutoVirtual);
+                Console.WriteLine(retorno);
+            }
 
+            //ModuloAula0541();
+
+            //ModuloAula0543 - Structs 
+            {
+                Produto prod = new Produto(10, "Mouse", 5.35f, ETipoDeProduto.ProdutoVirtual);
+                prod.Preco = 25.99f;
+                Console.WriteLine(prod.Id.ToString());
+                Console.WriteLine(prod.Nome);
+                Console.WriteLine(prod.Preco);
+                Console.WriteLine(prod.TipoDeProduto);
+                System.Console.WriteLine((int)prod.TipoDeProduto);
+            }
 
             //ModuloAula0901();
             //ModuloAula0902();
             //ModuloAula0903();
             //ModuloAula0904();
             //ModuloAula0905();
-
         }
-
-        struct Produto
-        {
-            public Produto(int id, string nome, double preco, ETipoDeProduto tipoDeProduto)
-            {
-                Id = id;
-                Nome = nome;
-                Preco = preco;
-                TipoDeProduto = tipoDeProduto;
-            }
-
-            public int Id;
-            public string Nome;
-            public double Preco;
-            public ETipoDeProduto TipoDeProduto;
-
-            public double PrecoEmDolar(double dolar)
-            {
-                return Preco * dolar;
-            }
-
-        }
-
-        enum ETipoDeProduto
-        {
-            ProdutoFisico = 1,
-            ProdutoVirtual = 2,
-            ServicoPresencial = 3
-        }
-
 
         //Módulo05: Linguagem de Programação com C# | Aula05: Variáveis
         static void ModuloAula0505()
@@ -311,12 +256,13 @@ namespace MeuApp
             } while (valor <= 5);
         }
 
-        //Módulo05: Linguagem de Programação com C# | Aula39: Métodos e funções:Prática
+        //Módulo05: Linguagem de Programação com C# | Aula39: Métodos e funções: Prática
         static void MeuMetodo()
         {
             Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula39: Métodos e funções:Prática");
             System.Console.WriteLine("C# é Legal!!!");
         }
+
         //Módulo05: Linguagem de Programação com C# | Aula39: Métodos e funções:Prática
         static string RetornaNome(
             string nome,
@@ -331,6 +277,58 @@ namespace MeuApp
             return nome + " " + sobrenome + " " + idade.ToString();
         }
 
+        //Módulo05: Linguagem de Programação com C# | Aula41: Value Types e Reference Types: Prática
+        static void ModuloAula0541()
+        {
+            Console.WriteLine("Módulo05: Linguagem de Programação com C# | Aula41: Value Types e Reference Types: Prática");
+            //Value Type
+            int x = 25;
+            int y = x; //É feito uma cópia 
+            System.Console.WriteLine(x); //x = 25
+            System.Console.WriteLine(y); //y = 25
+            x = 32;
+            System.Console.WriteLine(x); //x = 32
+            System.Console.WriteLine(y); //y = 25
+            //Reference Type
+            var arr1 = new string[2];
+            arr1[0] = "Item 1";
+            var arr2 = arr1;
+            System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 1"
+            System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 1"
+            arr1[0] = "Item 2";
+            System.Console.WriteLine(arr1[0]); // arr1[0] = "Item 2"
+            System.Console.WriteLine(arr2[0]); // arr2[0] = "Item 2"
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula43: Structs: Prática
+        struct Produto
+        {
+            public Produto(int id, string nome, double preco, ETipoDeProduto tipoDeProduto)
+            {
+                Id = id;
+                Nome = nome;
+                Preco = preco;
+                TipoDeProduto = tipoDeProduto;
+            }
+            public int Id;
+            public string Nome;
+            public double Preco;
+            public ETipoDeProduto TipoDeProduto;
+
+            public double PrecoEmDolar(double dolar)
+            {
+                return Preco * dolar;
+            }
+
+        }
+
+        //Módulo05: Linguagem de Programação com C# | Aula44: Structs: Enums
+        enum ETipoDeProduto
+        {
+            ProdutoFisico = 1,
+            ProdutoVirtual = 2,
+            ServicoPresencial = 3
+        }
 
         //Módulo09: Strings | Aula01: Guids
         static void ModuloAula0901()
