@@ -25,10 +25,10 @@ namespace MeuApp
 
             //ModuloAula0539 - Metodos
             {
-                MeuMetodo();
-                var retorno = "";
-                retorno = RetornaNome("Danilo Holanda Calixto", "Calixto", ETipoDeProduto.ProdutoVirtual);
-                Console.WriteLine(retorno);
+                //MeuMetodo();
+                //var retorno = "";
+                //retorno = RetornaNome("Danilo Holanda Calixto", "Calixto", ETipoDeProduto.ProdutoVirtual);
+                //Console.WriteLine(retorno);
             }
 
             //ModuloAula0541();
@@ -37,11 +37,11 @@ namespace MeuApp
             {
                 Produto prod = new Produto(10, "Mouse", 5.35f, ETipoDeProduto.ProdutoVirtual);
                 prod.Preco = 25.99f;
-                Console.WriteLine(prod.Id.ToString());
-                Console.WriteLine(prod.Nome);
-                Console.WriteLine(prod.Preco);
-                Console.WriteLine(prod.TipoDeProduto);
-                System.Console.WriteLine((int)prod.TipoDeProduto);
+                // Console.WriteLine(prod.Id.ToString());
+                // Console.WriteLine(prod.Nome);
+                // Console.WriteLine(prod.Preco);
+                // Console.WriteLine(prod.TipoDeProduto);
+                // Console.WriteLine((int)prod.TipoDeProduto);
             }
 
             //ModuloAula0901();
@@ -49,6 +49,7 @@ namespace MeuApp
             //ModuloAula0903();
             //ModuloAula0904();
             //ModuloAula0905();
+            ModuloAula0906();
         }
 
         //Módulo05: Linguagem de Programação com C# | Aula05: Variáveis
@@ -420,6 +421,19 @@ namespace MeuApp
             Console.WriteLine(texto.Equals(nome));
 
         }
+
+        //Módulo09: Strings | Aula06: Indices
+        static void ModuloAula0906()
+        {
+            var texto = "Este texto é um teste";
+            //Retorna o indice do primeiro encontrado
+            Console.WriteLine(texto.IndexOf("u"));
+            //Retorna o indice do último encontrado
+            Console.WriteLine(texto.LastIndexOf("e"));
+        }
+
+
+
     }
 
 

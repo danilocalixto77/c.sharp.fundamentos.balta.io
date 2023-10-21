@@ -995,7 +995,19 @@ Curso: [Balta.io](https://balta.io/)
     Console.WriteLine(texto.Equals(nome));
     ```
 
-  - Índices
+  - Índices/Index
+    > Indica uma pocisão de um caracter dentro de uma lista ou array.
+
+    > No C# inicia com 0.
+    ```
+    var texto = "Este texto é um teste";
+    //Retorna o indice do primeiro encontrado
+    Console.WriteLine(texto.IndexOf("u"));
+    //Retorna o indice do último encontrado
+    Console.WriteLine(texto.LastIndexOf("e"));
+    ```
+     
+
   - Métodos adicionais
   - Manipulando strings
   - StringBuilder
