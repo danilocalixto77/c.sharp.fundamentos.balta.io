@@ -1006,9 +1006,17 @@ Curso: [Balta.io](https://balta.io/)
     //Retorna o indice do último encontrado
     Console.WriteLine(texto.LastIndexOf("e"));
     ```
-     
 
   - Métodos adicionais
+    ```
+    var texto = "Este texto é um teste";
+    Console.WriteLine(texto.ToUpper());
+    Console.WriteLine(texto.ToLower());
+    Console.WriteLine(texto.Insert(5, "AQUI "));
+    Console.WriteLine(texto.Remove(5, 6));
+    Console.WriteLine(texto.Length);
+
+    ```
   - Manipulando strings
   - StringBuilder
   - Revisão

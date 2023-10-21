@@ -49,7 +49,8 @@ namespace MeuApp
             //ModuloAula0903();
             //ModuloAula0904();
             //ModuloAula0905();
-            ModuloAula0906();
+            //ModuloAula0906();
+            ModuloAula0907();
         }
 
         //Módulo05: Linguagem de Programação com C# | Aula05: Variáveis
@@ -432,7 +433,16 @@ namespace MeuApp
             Console.WriteLine(texto.LastIndexOf("e"));
         }
 
+        //Módulo09: Strings | Aula07: Métodos adicionais
+        static void ModuloAula0907(){
+            var texto = "Este texto é um teste";
+            Console.WriteLine(texto.ToUpper());
+            Console.WriteLine(texto.ToLower());
+            Console.WriteLine(texto.Insert(5, "AQUI "));
+            Console.WriteLine(texto.Remove(5, 6));
+            Console.WriteLine(texto.Length);
 
+        }
 
     }
 
