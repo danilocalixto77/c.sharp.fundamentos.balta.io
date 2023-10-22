@@ -50,7 +50,8 @@ namespace MeuApp
             //ModuloAula0904();
             //ModuloAula0905();
             //ModuloAula0906();
-            ModuloAula0907();
+            //ModuloAula0907();
+            ModuloAula0908();
         }
 
         //Módulo05: Linguagem de Programação com C# | Aula05: Variáveis
@@ -434,7 +435,8 @@ namespace MeuApp
         }
 
         //Módulo09: Strings | Aula07: Métodos adicionais
-        static void ModuloAula0907(){
+        static void ModuloAula0907()
+        {
             var texto = "Este texto é um teste";
             Console.WriteLine(texto.ToUpper());
             Console.WriteLine(texto.ToLower());
@@ -444,10 +446,33 @@ namespace MeuApp
 
         }
 
+        //Módulo09: Strings | Aula08: Manipulando strings
+        static void ModuloAula0908()
+        {
+            var texto = "  Este texto é um teste   ";
+            Console.WriteLine(texto.Replace("e", "X"));
+            Console.WriteLine(texto.Replace("xxxxxx", "X"));
+
+            var textoFatiado = texto.Split(" ");
+            Console.WriteLine(textoFatiado[0]);
+            Console.WriteLine(textoFatiado[1]);
+            Console.WriteLine(textoFatiado[2]);
+            Console.WriteLine(textoFatiado[3]);
+            Console.WriteLine(textoFatiado[4]);
+
+            var resultado = texto.Substring(5, 5);
+            resultado = texto.Substring(5, texto.LastIndexOf("o"));
+            Console.WriteLine(resultado);
+
+            Console.WriteLine(texto.Trim());
+
+        }
+
     }
 
 
 }
+
 
 
 
