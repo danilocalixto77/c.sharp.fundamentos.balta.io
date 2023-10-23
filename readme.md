@@ -1018,6 +1018,25 @@ Curso: [Balta.io](https://balta.io/)
 
     ```
   - Manipulando strings
+    ```
+    var texto = "  Este texto é um teste   ";
+    Console.WriteLine(texto.Replace("e", "X"));
+    Console.WriteLine(texto.Replace("xxxxxx", "X"));
+
+    var textoFatiado = texto.Split(" ");
+    Console.WriteLine(textoFatiado[0]);
+    Console.WriteLine(textoFatiado[1]);
+    Console.WriteLine(textoFatiado[2]);
+    Console.WriteLine(textoFatiado[3]);
+    Console.WriteLine(textoFatiado[4]);
+
+    var resultado = texto.Substring(5, 5);
+    resultado = texto.Substring(5, texto.LastIndexOf("o"));
+    Console.WriteLine(resultado);
+
+    Console.WriteLine(texto.Trim());
+    ```
+
   - StringBuilder
   - Revisão
 
