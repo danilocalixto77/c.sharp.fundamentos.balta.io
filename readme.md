@@ -147,9 +147,14 @@ Curso: [Balta.io](https://balta.io/)
     Program.cs  (arquivo codigo fonte)
 
   - Debug
-    >Executado modo debug pelo VSCode, Ctrl+Shift+D.
+    > Executado modo debug pelo VSCode, Ctrl+Shift+D.
     Pasta .vscode deve existir nas pastas do seu projeto.
     Caso não exista, ao entrar na opção de debug o vscode irá perguntar se deseja criar o "launch.jason" file, neste momento será criada a pasta ".vscode" que habilita para executar o debug da aplicação. Selecionar um projeto ".Net Core".
+ 
+    > Ou Ctrl+Shit+P : .NET: Generate Assest for bBuild and Debug
+
+    > Ou em último cado desistale as extenções, fecha o vscode. Abra o projeto com o vscode novamente sem as extensões instaladas e em seguida instale. Após a insatlação irá aparecer a pergunta se deseja criar a pasta .vscode.
+
 
   - Revisão
 
@@ -1053,6 +1058,21 @@ Curso: [Balta.io](https://balta.io/)
   - Revisão
 
 ## Mão na massa: Editor HTML
+
+  - Iniciando o projeto
+    ```
+    dotnet new console -o EditorHtml
+    ```
+
+  - Desenhando a tela
+  - Exibindo o menu
+  - Menu da aplicação
+  - Editor
+  - Visualizador
+  - Substituindo caracteres
+  - Revisão
+
+## Datas
 
 
 
