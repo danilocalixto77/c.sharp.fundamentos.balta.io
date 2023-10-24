@@ -1037,14 +1037,18 @@ Curso: [Balta.io](https://balta.io/)
     Console.WriteLine(texto.Trim());
     ```
   - StringBuilder
-  ```
+    > Biblioteca: using System.Text;
+    ```
+    //var texto = "Este texto é um teste";
+    var texto = new StringBuilder();
+    texto.Append("Este texto é um teste");
+    texto.Append("é um teste");
+    texto.Append("Este texto teste");
+    texto.Append("Este um teste");
 
-  ...
-
-  ```
-
-
-
+    Console.WriteLine(texto.ToString()); //Há situações em que é necessário a conversão.
+    Console.WriteLine(texto);
+    ```
 
   - Revisão
 

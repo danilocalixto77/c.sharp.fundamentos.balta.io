@@ -3,6 +3,7 @@ using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
+using System.Text;
 using System.Threading.Tasks.Dataflow;
 
 namespace MeuApp
@@ -51,7 +52,8 @@ namespace MeuApp
             //ModuloAula0905();
             //ModuloAula0906();
             //ModuloAula0907();
-            ModuloAula0908();
+            //ModuloAula0908();
+            ModuloAula0909();
         }
 
         //Módulo05: Linguagem de Programação com C# | Aula05: Variáveis
@@ -467,6 +469,21 @@ namespace MeuApp
             Console.WriteLine(texto.Trim());
 
         }
+
+        //Módulo09: Strings | Aula09: StringBuilder
+        static void ModuloAula0909()
+        {
+            //var texto = "Este texto é um teste";
+            var texto = new StringBuilder();
+            texto.Append("Este texto é um teste");
+            texto.Append("é um teste");
+            texto.Append("Este texto teste");
+            texto.Append("Este um teste");
+
+            Console.WriteLine(texto.ToString()); //Há situações em que é necessário a conversão.
+            Console.WriteLine(texto);
+        }
+
 
     }
 
