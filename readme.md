@@ -1036,8 +1036,16 @@ Curso: [Balta.io](https://balta.io/)
 
     Console.WriteLine(texto.Trim());
     ```
-
   - StringBuilder
+  ```
+
+  ...
+
+  ```
+
+
+
+
   - Revisão
 
 ## Mão na massa: Editor HTML
