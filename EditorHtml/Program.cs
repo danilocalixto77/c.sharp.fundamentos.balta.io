@@ -2,3 +2,4 @@
 using EditorHtml;
 
 Menu.Show();
+Menu.DrawScreen();
