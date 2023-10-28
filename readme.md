@@ -1069,6 +1069,7 @@ Curso: [Balta.io](https://balta.io/)
   - Menu da aplicação
   - Editor
   - Visualizador
+
   - Substituindo caracteres
   - Revisão
 
