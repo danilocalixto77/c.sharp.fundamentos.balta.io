@@ -1075,6 +1075,29 @@ Curso: [Balta.io](https://balta.io/)
 
 ## Datas
 
+  - Iniciando com datas
+    > DateTime() é um tipo struct.
+
+    > Não é inicializado por padrão vazio, virá um valor por default.
+      ```
+      Console.Clear();
+      var data = new DateTime();
+      Console.WriteLine($"Data padrão instanciada: {data}");
+      var dataHoje = DateTime.Now;
+      Console.WriteLine($"Data dia de hoje: {dataHoje}");
+      ```
+
+  - Obtendo valores da data
+  - Formatando datas
+  - Padrões de formatação
+  - Adicionando valores
+  - Comparando datas
+  - CultureInfo
+  - Timezone
+  - Timespan
+  - Revisão
+
+## Moedas
 
 
 

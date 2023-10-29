@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Diagnostics.Contracts;
 using System.Globalization;
 using System.Security.Cryptography;
@@ -53,7 +54,8 @@ namespace MeuApp
             //ModuloAula0906();
             //ModuloAula0907();
             //ModuloAula0908();
-            ModuloAula0909();
+            //ModuloAula0909();
+            ModuloAula1101();
         }
 
         //Módulo05: Linguagem de Programação com C# | Aula05: Variáveis
@@ -482,6 +484,16 @@ namespace MeuApp
 
             Console.WriteLine(texto.ToString()); //Há situações em que é necessário a conversão.
             Console.WriteLine(texto);
+        }
+
+        //Módulo11: Datas | Aula01: Iniciando com datas
+        static void ModuloAula1101()
+        {
+            Console.Clear();
+            var data = new DateTime();
+            Console.WriteLine($"Data padrão instanciada: {data}");
+            var dataHoje = DateTime.Now;
+            Console.WriteLine($"Data dia de hoje: {dataHoje}");
         }
 
 
