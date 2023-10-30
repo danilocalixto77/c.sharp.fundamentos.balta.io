@@ -14,48 +14,58 @@ namespace MeuApp
         static void Main(string[] args)
         {
 
-            //ModuloAula0505();
-            //ModuloAula0506();
-            //ModuloAula0526();
-            //ModuloAula0530();
-            //ModuloAula0531();
-            //ModuloAula0533();
-            //ModuloAula0534();
-            //ModuloAula0535();
-            //ModuloAula0536();
-            //ModuloAula0537();
-
-            //ModuloAula0539 - Metodos
+            //Exemplos Modulo05
             {
-                //MeuMetodo();
-                //var retorno = "";
-                //retorno = RetornaNome("Danilo Holanda Calixto", "Calixto", ETipoDeProduto.ProdutoVirtual);
-                //Console.WriteLine(retorno);
+                //ModuloAula0505();
+                //ModuloAula0506();
+                //ModuloAula0526();
+                //ModuloAula0530();
+                //ModuloAula0531();
+                //ModuloAula0533();
+                //ModuloAula0534();
+                //ModuloAula0535();
+                //ModuloAula0536();
+                //ModuloAula0537();
+
+                //ModuloAula0539 - Metodos
+                {
+                    //MeuMetodo();
+                    //var retorno = "";
+                    //retorno = RetornaNome("Danilo Holanda Calixto", "Calixto", ETipoDeProduto.ProdutoVirtual);
+                    //Console.WriteLine(retorno);
+                }
+
+                //ModuloAula0541();
+
+                //ModuloAula0543 - Structs 
+                {
+                    Produto prod = new Produto(10, "Mouse", 5.35f, ETipoDeProduto.ProdutoVirtual);
+                    prod.Preco = 25.99f;
+                    // Console.WriteLine(prod.Id.ToString());
+                    // Console.WriteLine(prod.Nome);
+                    // Console.WriteLine(prod.Preco);
+                    // Console.WriteLine(prod.TipoDeProduto);
+                    // Console.WriteLine((int)prod.TipoDeProduto);
+                }
             }
 
-            //ModuloAula0541();
-
-            //ModuloAula0543 - Structs 
+            //Exemplos Modulo09
             {
-                Produto prod = new Produto(10, "Mouse", 5.35f, ETipoDeProduto.ProdutoVirtual);
-                prod.Preco = 25.99f;
-                // Console.WriteLine(prod.Id.ToString());
-                // Console.WriteLine(prod.Nome);
-                // Console.WriteLine(prod.Preco);
-                // Console.WriteLine(prod.TipoDeProduto);
-                // Console.WriteLine((int)prod.TipoDeProduto);
+                //ModuloAula0901();
+                //ModuloAula0902();
+                //ModuloAula0903();
+                //ModuloAula0904();
+                //ModuloAula0905();
+                //ModuloAula0906();
+                //ModuloAula0907();
+                //ModuloAula0908();
+                //ModuloAula0909();
+                //ModuloAula1101();
+                //ModuloAula1102();
+                //ModuloAula1103();
+                ModuloAula1104();
             }
 
-            //ModuloAula0901();
-            //ModuloAula0902();
-            //ModuloAula0903();
-            //ModuloAula0904();
-            //ModuloAula0905();
-            //ModuloAula0906();
-            //ModuloAula0907();
-            //ModuloAula0908();
-            //ModuloAula0909();
-            ModuloAula1101();
         }
 
         //Módulo05: Linguagem de Programação com C# | Aula05: Variáveis
@@ -496,11 +506,58 @@ namespace MeuApp
             Console.WriteLine($"Data dia de hoje: {dataHoje}");
         }
 
+        //Módulo11: Datas | Aula02: Obtendo valores da data
+        static void ModuloAula1102()
+        {
+            var data = new DateTime(2020, 10, 12, 8, 23, 14);
+            Console.WriteLine(data);
+            Console.WriteLine(data.Year);
+            Console.WriteLine(data.Month);
+            Console.WriteLine(data.Day);
+            Console.WriteLine(data.Hour);
+            Console.WriteLine(data.Minute);
+            Console.WriteLine(data.Second);
+            Console.WriteLine(data.DayOfWeek);
+            Console.WriteLine((int)data.DayOfWeek);
+            Console.WriteLine(data.DayOfYear);
+        }
+
+        //Módulo11: Datas | Aula03: Formatando datas
+        static void ModuloAula1103()
+        {
+            Console.Clear();
+            var data = DateTime.Now;
+            //var formatada = String.Format("{0:yyyy}", data);
+            //var formatada = String.Format("{0:M}", data);
+            //var formatada = String.Format("{0:MM}", data);
+            //var formatada = String.Format("{0:yyyy/MM/dd hh:mm:ss}", data);
+            var formatada = String.Format("{0:yyyy/MM/dd hh:mm:ss f z}", data);
+            Console.WriteLine(formatada);
+
+        }
+
+        //Módulo11: Datas | Aula04: Padrões de formatação
+        static void ModuloAula1104()
+        {
+            Console.Clear();
+            var data = DateTime.Now;
+            //var formatada = String.Format("{0:t}", data); //Hora curta
+            //var formatada = String.Format("{0:d}", data); //Data
+            //var formatada = String.Format("{0:T}", data); //Hora longa
+            //var formatada = String.Format("{0:f}", data); //Data e Hora longa por extenso
+            //var formatada = String.Format("{0:g}", data); //Data e Hora curta
+            //var formatada = String.Format("{0:r}", data); //R ou r.Padrão Ingles utilizado por sistemas
+            //var formatada = String.Format("{0:s}", data); //Normalmente em base NoSql
+            var formatada = String.Format("{0:u}", data); //Muito utilizada em JSON
+
+            Console.WriteLine(formatada);
+        }
 
     }
 
 
 }
+
 
 
 

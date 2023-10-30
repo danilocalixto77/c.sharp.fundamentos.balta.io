@@ -1088,8 +1088,47 @@ Curso: [Balta.io](https://balta.io/)
       ```
 
   - Obtendo valores da data
+    ```
+    var data = new DateTime(2020, 10, 12, 8, 23, 14);
+    Console.WriteLine(data);
+    Console.WriteLine(data.Year);
+    Console.WriteLine(data.Month);
+    Console.WriteLine(data.Day);
+    Console.WriteLine(data.Hour);
+    Console.WriteLine(data.Minute);
+    Console.WriteLine(data.Second);
+    Console.WriteLine(data.DayOfWeek);
+    Console.WriteLine((int)data.DayOfWeek);
+    Console.WriteLine(data.DayOfYear);
+    ```
+
   - Formatando datas
+    ```
+    Console.Clear();
+    var data = DateTime.Now;
+    //var formatada = String.Format("{0:yyyy}", data);
+    //var formatada = String.Format("{0:M}", data);
+    //var formatada = String.Format("{0:MM}", data);
+    //var formatada = String.Format("{0:yyyy/MM/dd hh:mm:ss}", data);
+    var formatada = String.Format("{0:yyyy/MM/dd hh:mm:ss f z}", data);
+    Console.WriteLine(formatada);
+    ```
+
   - Padrões de formatação
+    ```
+    Console.Clear();
+    var data = DateTime.Now;
+    //var formatada = String.Format("{0:t}", data); //Hora curta
+    //var formatada = String.Format("{0:d}", data); //Data
+    //var formatada = String.Format("{0:T}", data); //Hora longa
+    //var formatada = String.Format("{0:f}", data); //Data e Hora longa por extenso
+    //var formatada = String.Format("{0:g}", data); //Data e Hora curta
+    //var formatada = String.Format("{0:r}", data); //R ou r.Padrão Ingles utilizado por sistemas
+    //var formatada = String.Format("{0:s}", data); //Normalmente em base NoSql
+    var formatada = String.Format("{0:u}", data); //Muito utilizada em JSON
+    Console.WriteLine(formatada);
+    ```
+
   - Adicionando valores
   - Comparando datas
   - CultureInfo
