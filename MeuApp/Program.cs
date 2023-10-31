@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks.Dataflow;
+using Microsoft.VisualBasic;
 
 namespace MeuApp
 {
@@ -65,7 +66,12 @@ namespace MeuApp
                 //ModuloAula1103();
                 //ModuloAula1104();
                 //ModuloAula1105();
-                ModuloAula1106();
+                //ModuloAula1106();
+                //ModuloAula1107();
+                //ModuloAula1108();
+                //ModuloAula1109();
+                ModuloAula1110();
+
             }
 
         }
@@ -580,10 +586,100 @@ namespace MeuApp
             Console.WriteLine(data);
         }
 
+        //Módulo11: Datas | Aula07: CultureInfo
+        static void ModuloAula1107()
+        {
+            Console.Clear();
+
+            var pt = new CultureInfo("pt-PT");
+            var br = new CultureInfo("pt-BR");
+            var en = new CultureInfo("en-US");
+            var de = new CultureInfo("de-DE");
+
+            Console.WriteLine(DateTime.Now.ToString("D")); //Funciona da mesma forma
+            Console.WriteLine(string.Format("{0:D}", DateTime.Now)); //Funciona da mesma forma
+
+            //Inserindo a cultura
+            Console.WriteLine(DateTime.Now.ToString("D", pt));
+            Console.WriteLine(DateTime.Now.ToString("D", en));
+            Console.WriteLine(DateTime.Now.ToString("D", de));
+
+            var culturaAtual = CultureInfo.CurrentCulture;
+
+            Console.WriteLine(DateTime.Now.ToString("D", culturaAtual));
+        }
+
+        //Módulo11: Datas | Aula08: Timezone
+        static void ModuloAula1108()
+        {
+            Console.Clear();
+
+            var utcData = DateTime.UtcNow;
+
+            Console.WriteLine(DateTime.Now);
+            Console.WriteLine(utcData);
+            Console.WriteLine(utcData.ToLocalTime()); //Para pegar a data local
+
+            var timezoneAustralia = TimeZoneInfo.FindSystemTimeZoneById("Pacific/Auckland");
+            Console.WriteLine(timezoneAustralia);
+
+            var horaAustralia = TimeZoneInfo.ConvertTimeFromUtc(utcData, timezoneAustralia);
+
+            Console.WriteLine(horaAustralia);
+
+            //Listando timezones
+            var timaZones = TimeZoneInfo.GetSystemTimeZones();
+            foreach (var tmzs in timaZones)
+            {
+                Console.WriteLine(tmzs.Id);
+                Console.WriteLine(tmzs);
+                Console.WriteLine(TimeZoneInfo.ConvertTimeFromUtc(utcData, tmzs));
+                Console.WriteLine("---------------------------");
+            }
+        }
+
+        //Módulo11: Datas | Aula09: Timaspan
+        static void ModuloAula1109()
+        {
+            Console.Clear();
+
+            var timeSpan = new TimeSpan();
+            Console.WriteLine(timeSpan);
+
+            var timeSpanNanoSegundo = new TimeSpan(1);
+            Console.WriteLine(timeSpanNanoSegundo);
+
+            var timeSpanHoraMinutoSegundo = new TimeSpan(5, 12, 8);
+            Console.WriteLine(timeSpanHoraMinutoSegundo);
+
+            var timeSpanDiaHoraMinutoSegundo = new TimeSpan(1, 5, 12, 10);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundo);
+
+            var timeSpanDiaHoraMinutoSegundoMilissegundo = new TimeSpan(1, 5, 12, 8, 100);
+            Console.WriteLine(timeSpanDiaHoraMinutoSegundoMilissegundo);
+        }
+
+        //Módulo11: Datas | Aula10: Revisão
+        static void ModuloAula1110()
+        {
+            Console.Clear();
+            //Quanto dias tem em um mês?
+            Console.WriteLine(DateTime.DaysInMonth(2023, 2));
+            //Como ver o horario de verão
+            Console.WriteLine(DateTime.Now.IsDaylightSavingTime());
+            Console.WriteLine(FinaldeSemana(DateTime.Now.DayOfWeek));
+        }
+
+        static bool FinaldeSemana(DayOfWeek hoje)
+        {
+            return hoje == DayOfWeek.Saturday || hoje == DayOfWeek.Sunday;
+        }
+
     }
 
 
 }
+
 
 
 
