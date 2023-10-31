@@ -63,7 +63,9 @@ namespace MeuApp
                 //ModuloAula1101();
                 //ModuloAula1102();
                 //ModuloAula1103();
-                ModuloAula1104();
+                //ModuloAula1104();
+                //ModuloAula1105();
+                ModuloAula1106();
             }
 
         }
@@ -533,7 +535,6 @@ namespace MeuApp
             //var formatada = String.Format("{0:yyyy/MM/dd hh:mm:ss}", data);
             var formatada = String.Format("{0:yyyy/MM/dd hh:mm:ss f z}", data);
             Console.WriteLine(formatada);
-
         }
 
         //Módulo11: Datas | Aula04: Padrões de formatação
@@ -551,6 +552,32 @@ namespace MeuApp
             var formatada = String.Format("{0:u}", data); //Muito utilizada em JSON
 
             Console.WriteLine(formatada);
+        }
+
+        //Módulo11: Datas | Aula05: Adicionando valores
+        static void ModuloAula1105()
+        {
+            Console.Clear();
+            var data = DateTime.Now;
+            Console.WriteLine(data);
+            Console.WriteLine(data.AddDays(5));
+            Console.WriteLine(data.AddMonths(2));
+            Console.WriteLine(data.AddYears(10));
+            Console.WriteLine(data.AddHours(5));
+            Console.WriteLine(data.AddMinutes(15));
+        }
+
+        //Módulo11: Datas | Aula06: Comparando datas
+        static void ModuloAula1106()
+        {
+            Console.Clear();
+            var data = DateTime.Now;
+
+            if (data.Date == DateTime.Now.Date)
+            {
+                Console.WriteLine("É igual");
+            }
+            Console.WriteLine(data);
         }
 
     }

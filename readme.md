@@ -1130,7 +1130,29 @@ Curso: [Balta.io](https://balta.io/)
     ```
 
   - Adicionando valores
+    ```
+    Console.Clear();
+    var data = DateTime.Now;
+    Console.WriteLine(data);
+    Console.WriteLine(data.AddDays(5));
+    Console.WriteLine(data.AddMonths(2));
+    Console.WriteLine(data.AddYears(10));
+    Console.WriteLine(data.AddHours(5));
+    Console.WriteLine(data.AddMinutes(15));
+    ```
+
   - Comparando datas
+    ```
+    Console.Clear();
+    var data = DateTime.Now;
+
+    if (data.Date == DateTime.Now.Date)
+    {
+        Console.WriteLine("É igual");
+    }
+    Console.WriteLine(data);
+
+    ```
   - CultureInfo
   - Timezone
   - Timespan
