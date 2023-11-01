@@ -1,0 +1,14 @@
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\bin\Debug\net7.0\Numbers.exe
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\bin\Debug\net7.0\Numbers.deps.json
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\bin\Debug\net7.0\Numbers.runtimeconfig.json
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\bin\Debug\net7.0\Numbers.dll
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\bin\Debug\net7.0\Numbers.pdb
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\Numbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\Numbers.AssemblyInfoInputs.cache
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\Numbers.AssemblyInfo.cs
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\Numbers.csproj.CoreCompileInputs.cache
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\Numbers.dll
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\refint\Numbers.dll
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\Numbers.pdb
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\Numbers.genruntimeconfig.cache
+C:\Projetos\CSharp\FundamentosCSharp\Numbers\obj\Debug\net7.0\ref\Numbers.dll
