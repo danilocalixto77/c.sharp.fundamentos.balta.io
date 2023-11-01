@@ -1240,6 +1240,42 @@ Curso: [Balta.io](https://balta.io/)
 
 ## Moedas
 
+  - Tipo para moedas
+    > Os numero com casa decimais temos o float, double e decimal.
+
+    > Caso seja declarado uma variável e não seja implicitamente declarada o tipo de variável que tenha ponto flutuante, o C# automaticamente irá criar como **double**.
+
+    > Há várias discussões acerca de qual desses três tipo de variáveis acima mencionado seria a melhor alternativa para se trabalhar. Desses três tipos o **Decimal** possue maior precisão, entretanto utiliza mais recursos que os outros dois tipos **double e float**, portanto essa questão de qual é melhor ou pior, é um debate que deve ser analisado a luz da necessidade do projeto. Mas em caso de dúvidas a utilização do **decimal** seria uma opção mais indicada.
+
+  - Formatando moedas
+    ```
+      var valor = 10.25;
+      Console.WriteLine(valor.ToString(CultureInfo.CreateSpecificCulture("en-US")));
+      Console.WriteLine(valor.ToString(CultureInfo.CreateSpecificCulture("pt-BR")));
+      Console.WriteLine(valor.ToString(CultureInfo.CreateSpecificCulture("de-DE")));
+      Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("pt-BR")));
+      Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("es-ES")));
+      Console.WriteLine(valor.ToString("C", CultureInfo.CreateSpecificCulture("en-US")));
+      Console.WriteLine(valor.ToString("E04", CultureInfo.CreateSpecificCulture("pt-BR")));
+      Console.WriteLine(valor.ToString("G", CultureInfo.CreateSpecificCulture("pt-BR")));
+      Console.WriteLine(valor.ToString("F", CultureInfo.CreateSpecificCulture("pt-BR")));
+      Console.WriteLine(valor.ToString("N", CultureInfo.CreateSpecificCulture("pt-BR")));
+      Console.WriteLine(valor.ToString("P", CultureInfo.CreateSpecificCulture("pt-BR")));
+
+    ```
+
+  - Math
+    ```
+      decimal valor = 10536.25m;
+      Console.WriteLine(Math.Round(valor));
+      Console.WriteLine(Math.Ceiling(valor));
+      Console.WriteLine(Math.Floor(valor));
+    ```
+
+  - Revisão
+
+## Arrays
+
 
 
 
