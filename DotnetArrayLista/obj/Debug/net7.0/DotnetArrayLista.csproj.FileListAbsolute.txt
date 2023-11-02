@@ -1,0 +1,14 @@
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\DotnetArrayLista.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\DotnetArrayLista.AssemblyInfoInputs.cache
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\DotnetArrayLista.AssemblyInfo.cs
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\DotnetArrayLista.csproj.CoreCompileInputs.cache
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\bin\Debug\net7.0\DotnetArrayLista.exe
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\bin\Debug\net7.0\DotnetArrayLista.deps.json
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\bin\Debug\net7.0\DotnetArrayLista.runtimeconfig.json
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\bin\Debug\net7.0\DotnetArrayLista.dll
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\bin\Debug\net7.0\DotnetArrayLista.pdb
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\DotnetArrayLista.dll
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\refint\DotnetArrayLista.dll
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\DotnetArrayLista.pdb
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\DotnetArrayLista.genruntimeconfig.cache
+C:\Projetos\CSharp\FundamentosCSharp\DotnetArrayLista\obj\Debug\net7.0\ref\DotnetArrayLista.dll
