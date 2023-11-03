@@ -1316,9 +1316,31 @@ Curso: [Balta.io](https://balta.io/)
 
       ```
     > Obsevando que o tipo Array é um tipo um pouco mais simples para trabalharmos, portando não é o mais comum de utilizar no dia a dia. A seguir teremos exemplo do tipo Lista que apresenta melhores possibilidades de se trabalhar com esse tipo.
+ 
+    > Arrays são **Reference Type**, portanto eles alocam o espaço da memória e sempre ele irá substituir os valores dentor do mesmo array. Para criar um novo array deve-se utilizar o método **Clone**.
 
 
   - Percorrendo um array
+    ```
+            meuArray[0] = 10;
+            meuArray[1] = 12;
+            meuArray[2] = 15;
+            meuArray[3] = 200;
+            meuArray[4] = 1200;
+
+            for (int i = 0; i < meuArray.Length; i++)
+            {
+                Console.WriteLine($"Posição: {i} Valor: {meuArray[i]}");
+
+            }
+
+            foreach (var itens in meuArray)
+            {
+                Console.WriteLine(itens);
+            }
+    ```
+
+
   - ForEach
   - Alterando os valores
   - Revisão
