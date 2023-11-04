@@ -10,8 +10,10 @@ namespace DotnetArrayLista
             Console.Clear();
             //ModuloAula1301();
             //ModuloAula1302();
-            ModuloAula1303();
-
+            //ModuloAula1303();
+            //ModuloAula1304();
+            //ModuloAula1402();
+            ModuloAula1403();
         }
 
         struct Teste
@@ -99,6 +101,75 @@ namespace DotnetArrayLista
             public int Id { get; set; }
             public string Nome { get; set; }
         }
+
+        //Modulo: 13 - Arrays | Aula 04: Alterando os valores
+        static void ModuloAula1304()
+        {
+            //Exemplo de atribuição por referência:
+            var arr1 = new int[4];
+            var arr2 = arr1;
+            arr1[0] = 23;
+            Console.WriteLine($"{arr1[0]} {arr2[0]}");
+
+            //Exemplo de atribuição para um novo array.
+            var arr3 = new int[4];
+
+            arr1[0] = arr3[0];
+
+            arr3[0] = 15;
+
+            Console.WriteLine($"{arr1[0]} {arr3[0]}");
+
+        }
+
+        //Modulo: 14 - Arrays | Aula 02: Try/Catch
+        static void ModuloAula1402()
+        {
+            var arr = new int[3];
+
+            try
+            {
+                for (var i = 0; i <= 5; i++)
+                {
+                    Console.WriteLine($"{arr[i]}");
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ops... Algo errado!");
+                Console.WriteLine($"InnerException : {ex.InnerException}");
+                Console.WriteLine($"Mensagem : {ex.Message}");
+            }
+
+        }
+
+        //Modulo: 14 - Arrays | Aula 03: Tratando erros
+        static void ModuloAula1403()
+        {
+            var arr = new int[3];
+
+            try
+            {
+                for (var i = 0; i <= 5; i++)
+                {
+                    Console.WriteLine($"{arr[i]}");
+                }
+            }
+            catch (IndexOutOfRangeException ex)
+            {
+                Console.WriteLine($"Índice fora do range do array.");
+                Console.WriteLine($"InnerException : {ex.InnerException}");
+                Console.WriteLine($"Mensagem : {ex.Message}");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Ops... Algo errado!");
+                Console.WriteLine($"InnerException : {ex.InnerException}");
+                Console.WriteLine($"Mensagem : {ex.Message}");
+            }
+
+        }
+
     }
 
 }

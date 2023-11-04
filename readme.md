@@ -1322,27 +1322,69 @@ Curso: [Balta.io](https://balta.io/)
 
   - Percorrendo um array
     ```
-            meuArray[0] = 10;
-            meuArray[1] = 12;
-            meuArray[2] = 15;
-            meuArray[3] = 200;
-            meuArray[4] = 1200;
+      meuArray[0] = 10;
+      meuArray[1] = 12;
+      meuArray[2] = 15;
+      meuArray[3] = 200;
+      meuArray[4] = 1200;
 
-            for (int i = 0; i < meuArray.Length; i++)
-            {
-                Console.WriteLine($"Posição: {i} Valor: {meuArray[i]}");
+      for (int i = 0; i < meuArray.Length; i++)
+      {
+            Console.WriteLine($"Posição: {i} Valor: {meuArray[i]}");
+      }
 
-            }
-
-            foreach (var itens in meuArray)
-            {
-                Console.WriteLine(itens);
-            }
     ```
 
-
   - ForEach
+    ```
+      int[] meuArray = new int[5];
+      meuArray[0] = 10;
+      meuArray[1] = 12;
+      meuArray[2] = 15;
+      meuArray[3] = 200;
+      meuArray[4] = 1200;
+
+      Console.WriteLine("ForEach de um array de inteiros");
+      Console.WriteLine("----------------------------------");
+      foreach (var item in meuArray)
+      {
+            Console.WriteLine(item);
+      }
+
+      Console.WriteLine("ForEach de um array de inteiros");
+      Console.WriteLine("----------------------------------");
+      var funcionarios = new Funcinario[5];
+      funcionarios[0] = new Funcinario() { Id = 1010, Nome = "Danilo" };
+      funcionarios[1] = new Funcinario() { Id = 2020, Nome = "Lu" };
+      foreach (var funcionario in funcionarios)
+      {
+            Console.WriteLine($"ID: {funcionario.Id} - NOME: {funcionario.Nome}");
+      }
+
+    ```
+
   - Alterando os valores
+    > Como mencionado anteriormente o array ele é um objeto do tipo Reference Type. Portanto atribuições de um array1 para um array2, eles irão ocupar o mesmo espaço de memória.
+
+    > Para podermos ter atribuições para um novo array, requer que o array2 seja instanciado com o comando **new**.
+    ```
+      //Exemplo de atribuição por referência:
+      var arr1 = new int[4];
+      var arr2 = arr1;
+      arr1[0] = 23;
+      Console.WriteLine($"{arr1[0]} {arr2[0]}");
+
+      //Exemplo de atribuição para um novo array.
+      var arr3 = new int[4];
+
+      arr1[0] = arr3[0];
+
+      arr3[0] = 15;
+
+      Console.WriteLine($"{arr1[0]} {arr3[0]}");
+
+    ```
+
   - Revisão
 
 ## Exceptions
@@ -1350,6 +1392,33 @@ Curso: [Balta.io](https://balta.io/)
   - Exceptions
   - Try/Catch
   - Tratando erros
+    > Sempre que for inserir uma Exception observar para fazer da exceção específica para a mais genérica.
+
+    ```
+      var arr = new int[3];
+
+      try
+      {
+            for (var i = 0; i <= 5; i++)
+            {
+                  Console.WriteLine($"{arr[i]}");
+            }
+      }
+      catch (IndexOutOfRangeException ex)
+      {
+            Console.WriteLine($"Índice fora do range do array.");
+            Console.WriteLine($"InnerException : {ex.InnerException}");
+            Console.WriteLine($"Mensagem : {ex.Message}");
+      }
+      catch (Exception ex)
+      {
+            Console.WriteLine($"Ops... Algo errado!");
+            Console.WriteLine($"InnerException : {ex.InnerException}");
+            Console.WriteLine($"Mensagem : {ex.Message}");
+      }
+
+    ```
+
   - Disparando exceções
   - Custom Exceptions
   - Finally
