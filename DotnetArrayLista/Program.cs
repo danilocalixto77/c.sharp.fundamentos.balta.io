@@ -123,7 +123,7 @@ namespace DotnetArrayLista
 
         }
 
-        //Modulo: 14 - Arrays | Aula 02: Try/Catch
+        //Modulo: 14 - Exceptions | Aula 02: Try/Catch
         static void ModuloAula1402()
         {
             var arr = new int[3];
@@ -144,7 +144,7 @@ namespace DotnetArrayLista
 
         }
 
-        //Modulo: 14 - Arrays | Aula 03: Tratando erros
+        //Modulo: 14 - Exceptions | Aula 03: Tratando erros
         static void ModuloAula1403()
         {
             var arr = new int[3];
@@ -187,11 +187,10 @@ namespace DotnetArrayLista
 
         }
 
-        //Modulo: 14 - Arrays | Aula 03: Tratando erros
+        //Modulo: 14 - Exceptions | Aula 03: Tratando erros
         static void ModuloAula1404(string textoTeste)
         {
             Salvar(textoTeste);
-            SalvarNewException(textoTeste);
         }
 
         static void Salvar(string texto)
@@ -201,12 +200,6 @@ namespace DotnetArrayLista
 
         }
 
-        static void SalvarNewException(string texto)
-        {
-            if (string.IsNullOrEmpty(texto))
-                throw new MinhaException(DateTime.Now);
-
-        }
 
         public class MinhaException : Exception
         {
@@ -218,7 +211,19 @@ namespace DotnetArrayLista
             public DateTime QuandoAconteceu { get; set; }
         }
 
+        //Modulo: 14 - Exceptions | Aula 05: Custm Exceptions
+        static void ModuloAula1405(string textoTeste)
+        {
+            SalvarNewException(textoTeste);
+        }
 
+
+        static void SalvarNewException(string texto)
+        {
+            if (string.IsNullOrEmpty(texto))
+                throw new MinhaException(DateTime.Now);
+
+        }
 
     }
 

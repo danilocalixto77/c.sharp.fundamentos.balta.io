@@ -1434,8 +1434,25 @@ Curso: [Balta.io](https://balta.io/)
 
     ```
 
-
   - Custom Exceptions
+    ```
+      public class MinhaException : Exception
+      {
+            public MinhaException(DateTime data)
+            {
+                QuandoAconteceu = data;
+            }
+
+            public DateTime QuandoAconteceu { get; set; }
+      }
+
+      //Modulo: 14 - Exceptions | Aula 05: Custm Exceptions
+      static void ModuloAula1405(string textoTeste)
+      {
+            SalvarNewException(textoTeste);
+      }
+
+    ```
   - Finally
   - Revisão
 
