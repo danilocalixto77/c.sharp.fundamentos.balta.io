@@ -184,6 +184,10 @@ namespace DotnetArrayLista
                 Console.WriteLine($"InnerException : {ex.InnerException}");
                 Console.WriteLine($"Mensagem : {ex.Message}");
             }
+            finally
+            {
+                Console.WriteLine("Chegou ao fim!");
+            }
 
         }
 

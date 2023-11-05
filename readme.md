@@ -1454,6 +1454,8 @@ Curso: [Balta.io](https://balta.io/)
 
     ```
   - Finally
+    > É um método no qual executa um bloco de comandos independente de ter ocorrido excepiton.
+
   - Revisão
 
 ## Conclusão
