@@ -1420,6 +1420,21 @@ Curso: [Balta.io](https://balta.io/)
     ```
 
   - Disparando exceções
+    ```
+      static void ModuloAula1404(string textoTeste)
+      {
+            Salvar(textoTeste);
+      }
+
+      static void Salvar(string texto)
+      {
+            if (string.IsNullOrEmpty(texto))
+                  throw new ArgumentException("O texto não pode ser nulo ou vazio (throw)!");
+      }
+
+    ```
+
+
   - Custom Exceptions
   - Finally
   - Revisão

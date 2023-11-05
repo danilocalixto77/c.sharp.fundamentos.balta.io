@@ -14,6 +14,7 @@ namespace DotnetArrayLista
             //ModuloAula1304();
             //ModuloAula1402();
             ModuloAula1403();
+            //ModuloAula1404("");
         }
 
         struct Teste
@@ -150,14 +151,21 @@ namespace DotnetArrayLista
 
             try
             {
-                for (var i = 0; i <= 5; i++)
+                for (var i = 0; i < arr.Length; i++)
                 {
                     Console.WriteLine($"{arr[i]}");
                 }
+                Salvar("");
             }
             catch (IndexOutOfRangeException ex)
             {
                 Console.WriteLine($"Índice fora do range do array.");
+                Console.WriteLine($"InnerException : {ex.InnerException}");
+                Console.WriteLine($"Mensagem : {ex.Message}");
+            }
+            catch (ArgumentException ex)
+            {
+                Console.WriteLine($"Falha ao cadastrar texto vazio ou nulo.");
                 Console.WriteLine($"InnerException : {ex.InnerException}");
                 Console.WriteLine($"Mensagem : {ex.Message}");
             }
@@ -169,6 +177,21 @@ namespace DotnetArrayLista
             }
 
         }
+
+        //Modulo: 14 - Arrays | Aula 03: Tratando erros
+        static void ModuloAula1404(string textoTeste)
+        {
+            Salvar(textoTeste);
+        }
+
+        static void Salvar(string texto)
+        {
+            if (string.IsNullOrEmpty(texto))
+                throw new ArgumentException("O texto não pode ser nulo ou vazio (throw)!");
+        }
+
+
+
 
     }
 
