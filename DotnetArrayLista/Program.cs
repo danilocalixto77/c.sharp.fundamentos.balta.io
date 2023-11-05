@@ -155,7 +155,8 @@ namespace DotnetArrayLista
                 {
                     Console.WriteLine($"{arr[i]}");
                 }
-                Salvar("");
+                //Salvar("");
+                SalvarNewException("");
             }
             catch (IndexOutOfRangeException ex)
             {
@@ -168,6 +169,14 @@ namespace DotnetArrayLista
                 Console.WriteLine($"Falha ao cadastrar texto vazio ou nulo.");
                 Console.WriteLine($"InnerException : {ex.InnerException}");
                 Console.WriteLine($"Mensagem : {ex.Message}");
+            }
+            catch (MinhaException ex)
+            {
+
+                Console.WriteLine($"InnerException : {ex.InnerException}");
+                Console.WriteLine($"Mensagem : {ex.Message}");
+                Console.WriteLine(ex.QuandoAconteceu);
+                Console.WriteLine($"Exceção customizada!");
             }
             catch (Exception ex)
             {
@@ -182,14 +191,32 @@ namespace DotnetArrayLista
         static void ModuloAula1404(string textoTeste)
         {
             Salvar(textoTeste);
+            SalvarNewException(textoTeste);
         }
 
         static void Salvar(string texto)
         {
             if (string.IsNullOrEmpty(texto))
                 throw new ArgumentException("O texto não pode ser nulo ou vazio (throw)!");
+
         }
 
+        static void SalvarNewException(string texto)
+        {
+            if (string.IsNullOrEmpty(texto))
+                throw new MinhaException(DateTime.Now);
+
+        }
+
+        public class MinhaException : Exception
+        {
+            public MinhaException(DateTime data)
+            {
+                QuandoAconteceu = data;
+            }
+
+            public DateTime QuandoAconteceu { get; set; }
+        }
 
 
 
